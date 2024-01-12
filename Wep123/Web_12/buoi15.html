@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buoi15.css">
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Ngôn ngữ HTML</a></li>
+        <li>
+            <div class="drop">
+                <a href="#">Ngôn ngữ CSS</a>
+        
+        <div class="drop-conten">
+            <a href="#">Tổng quan</a>
+            <a href="#">Thuộc tính định dang</a>
+            <a href="#">Thuộc tính khác</a>
+            <a href="#">thiết kế Laypout</a>
+        </div>
+        </div>
+    </li>
+        <li><a href="#">Ngôn ngữ Javascipt</a></li>
+        <li>
+            <div class="drop">
+                <a href="#">Thiết kế đồ họa</a>
+        
+        <div class="drop-conten">
+            <a href="#">Photoshop</a>
+            <a href="#">Hoc Tap</a>
+            <a href="#">Corele Draw</a>
+            <a href="#">Flash</a>
+        </div>
+        </div>
+    </li>
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darken Screen on Box Display</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="buoi15.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Your content goes here -->
+    <button onclick="showBox()">Show Box</button>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="hideBox()"></div>
+
+  <div class="box" id="box">
+    <!-- Box content goes here -->
+    <p>This is the box content.</p>
+  </div>
+
+  <script>
+    function showBox() {
+  var overlay = document.getElementById('overlay');
+  var box = document.getElementById('box');
+
+  overlay.style.display = 'block';
+  box.style.display = 'block';
+
+  document.body.classList.add('dark'); // Add 'dark' class to body
+}
+
+function hideBox() {
+  var overlay = document.getElementById('overlay');
+  var box = document.getElementById('box');
+
+  overlay.style.display = 'none';
+  box.style.display = 'none';
+
+  document.body.classList.remove('dark'); // Remove 'dark' class from body
+}
+  </script>
+</body>
+</html>

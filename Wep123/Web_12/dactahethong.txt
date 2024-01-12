@@ -1,0 +1,3 @@
+# Thứ tự ưu tiên css { 1. trong thẻ mạnh nhất song đến 2.thẻ style phải viết trong thẻ head tiếp đến 3. file css riêng }
+# !important trong css thì là mạnh nhất không sét đến thứ tự ưu tiên nhưng nếu có 1 class mà đều !important thì nó sẽ xét đến vị trí import file css trên thẻ head
+# :root {} đây là keyword khai báo một cái gốc rễ cho file css của bạn cách dặt tên biên -- tên biên cần đặt ví dụ --color : #ccc;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+    <!-- Thẻ nhúng các trang web khác vào:  -->
+    <img src="/Wep123/anh_web/anh1.jpg" alt="">
+    <iframe src="https://28tech.com.vn/" frameborder="0" width="400px" height="400px"></iframe>
+    <iframe src="https://fullstack.edu.vn/" frameborder="0" width="400px" height="400px"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XWhdbZ9-uGA?si=at29QDp4wS8XkB_q" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+    <form action="http://www.w3shools.com/action_page.php"
+    autocomplete="on"
+    method="get"
+    >
+        <input type="email" name="Email" value="Elami">
+        <br>
+        <!-- nếu đặt for="fullname" trùng với id="fullname" 
+            trùng với lable và input thì khi tích chuột vào
+            Hoten nó sẽ tự động nhảy vào chỗ điiền input
+        -->
+        <label for="fullname">Hoten</label>
+        <input id="fullname" type="" name="ho_ten" id="">
+        <input type="submit" value="Gui">
+         <br>
+
+         <label for="">Mau sac</label>
+         <!-- size neu cho 2 no se hien 2 mau
+        mac dinh la 1 -->
+        <select name="color" id="" size="1">
+            <!-- nếu muốn cho mặc định đầu tiên sẽ chọn selected -->
+            <option value="yellow">Mau vang</option>
+            <option selected value="red">Mau do</option>
+            <option value="blue">Mau xanh</option>
+        </select>
+<br>
+         <!-- textarea -->
+         <!-- cols là số chữ 1 hàng
+        rows là số dòng có thể hiển thị trên 1 textarea nhé
+         -->
+         <textarea name="" id="" cols="30" rows="4"></textarea>
+         <input type="submit" value="Send">
+<br>
+         <!-- button -->
+         <input type="password" name="passwod">
+       <br>
+       <input type="range" name="volume" min="0" max="100" step="10">
+       <br>
+       <input type="color">
+       <br>
+         <button>
+            Gui
+         </button>
+         <!-- cac thuoc tinh cua the input
+        value : là giá trị chỉ định ban đầu của thẻ input,nó mờ 
+        readonly : thuộc tính không thẻ sửa được,dùng khi đã oke
+        disabled : thuốc tính hiẹn ra nhưng ko thể gửi đi đươcej vì gửi đi nó k nhận
+        maxlength : số ký tự tối đa có thể nhập
+        min, max : chỉ đinh các giá trọ tối thiểu tôi đa khi nhâp
+        
+        -->
+    </form>
+    <br>
+    <h1>Noi dung the h1</h1>
+    <div class="big-image"></div>
+    <br>
+    <h1>Hi what are you</h1>
+    <div class="box-1">
+
+    </div>
+</body>
+</html>

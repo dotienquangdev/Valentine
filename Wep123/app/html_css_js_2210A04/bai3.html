@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai3.css">
+</head>
+<style>
+    table {
+        border-collapse: collapse; /* Để loại bỏ khoảng trắng giữa các ô */
+        width: 50%; /* Độ rộng của bảng */
+    }
+    
+    th, td {
+        border: 1px solid black; /* Thêm đường kẻ cho mỗi ô */
+        padding: 8px; /* Khoảng cách giữa nội dung và đường kẻ */
+        text-align: left; /* Căn lề nội dung sang trái */
+    }
+    
+    th {
+        background-color: bisque; /* Màu nền cho tiêu đề cột */
+    }
+    </style>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Quần áo</li>
+            <li>Giày dép</li>
+            <li>Phụ kiện</li>
+            <li>Liên hệ</li>
+            <li><input style="border-radius:5px ;
+            color: black;
+            " type="text" placeholder="Tim kiem"></li>
+        </ul>
+    </div>
+    <div class="b">
+        <div class="c">
+          <d>
+            <span style="color: black;
+            padding-top: 20px;
+          font-size: 28px;
+          font-weight: bolder;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          ">Danh sach mat hang thoi trang</span>
+          </d>
+        </div>
+        <div class="body1">
+            <div class="body-left" style="display: flex;">
+                <!-- <div class="body-left-left">
+                    <form action="">
+                        <div>
+                            <th class="abc">
+                                <tr>Ten mat hang</tr>
+                                
+                            </th>
+                        </div>
+                        <div>
+                            <th class="abc">
+                                <tr>Loai hang</tr>
+                         
+                            </th>
+                        </div>
+                        <div>
+                            <th class="abc">
+                                <tr>So luong</tr>
+                              
+                            </th>
+                        </div>
+                        <div>
+                            <th class="abc">
+                                <tr>Don gia</tr>
+                               
+                            </th>
+                        </div>
+                        <div>
+                            <th class="abc">
+                                <tr>Hinh anh</tr>
+                              
+                            </th>
+                        </div>
+                        <div>
+                            <th class="abc">
+                                <tr>Xuat xu</tr>
+                                
+                            </th>
+                        </div>
+    
+                    </form> 
+                </div>
+                <div  class="body-left-right">
+
+                    <form action="">
+
+                        <div class="abc">
+                            <th>
+                            
+                                <tr><input type="text"></tr>
+                            </th>
+                        </div>
+                        <div class="abc">
+                            <th>
+                                <input type="radio" name="sex">Quan ao
+                                <input type="radio" name="sex">Giay dep
+                                <input type="radio" name="sex">Phu kien
+                            </th>
+                        </div>
+                        <div class="abc">
+                            <th>
+                               
+                                <tr><input type="text"></tr>
+                            </th>
+                        </di class="abc"v>
+                        <div>
+                            <th>
+                                <tr><input type="text"></tr>
+                            </th>
+                        </div>
+                        <div class="abc">
+                            <th>
+                               
+                                <input class="ad" type="file" id="avatar" name="avatar" accept="image/*">
+                            </th>
+                        </div>
+                        <div class="abc">
+                            <th>
+                               
+                                <input class="ad" type="file" id="avatar" name="avatar" accept="image/*">
+                            </th>
+                        </div>
+    
+                        <th colspan="1">
+                            <button style=" width: 120px;
+                            height: 40px;
+                            border-radius: 8px;
+                                background-color: rgb(185, 114, 252);" type="button" id="cancelButton">Them san pham</button>
+                        </th>
+                    </form> 
+                </div> -->
+                <form action="">
+                    <!-- <table border="1px">
+                        <div class="bcdefg">
+                            <th>
+                                <tr class="bcde">Ten mat hang</tr>
+                                <tr class="bcdef"><input type="text"></tr>
+                            </th>
+                        </div>
+                        <div class="bcdefg">
+                            <th>
+                                <tr class="bcde">Loai hang</tr>
+                                <tr class="bcdef">
+                                    <input type="radio" name="sex">Quan ao
+                                <input type="radio" name="sex">Giay dep
+                                <input type="radio" name="sex">Phu kien
+                                </tr>
+                            </th>
+                        </div>
+                        <div class="bcdefg">
+                            <th>
+                                <tr class="bcde">So luong</tr>
+                                <tr class="bcdef"><input type="text"></tr>
+                            </th>
+                        </div>
+                        <div class="bcdefg">
+                            <th>
+                                <tr class="bcde">Don gia</tr>
+                                <tr class="bcdef"><input type="text"></tr>
+                            </th>
+                        </div>
+                        <div class="bcdefg">
+                            <th>
+                                <tr class="bcde">Hinh anh</tr>
+                                <tr class="bcdef">
+                                    <input class="ad" type="file" id="avatar" name="avatar" accept="image/*">
+                                </tr>
+                            </th>
+                        </div>
+                        
+                        <div class="bcdefg">
+                            <th>  
+                                <tr class="bcde">Xuat xu</tr>
+                                <tr class="bcdef">
+                                <input class="ad" type="file" id="avatar" name="avatar" accept="image/*">
+                                </tr>
+                            </th>
+                            <th colspan="1">
+                                <button 
+                                style=" width: 120px;
+                            height: 40px;
+                            border-radius: 8px;
+                            background-color: rgb(185, 114, 252);" type="button" id="cancelButton">Them san pham</button>
+                                 </th>
+                        </div>
+     -->
+                           
+                    <!-- </table> -->
+                </form> 
+            </div>
+            <div class="body-right">
+                <form action="">
+                    <table  border="1px">
+                        <tr>
+                            <th>STT</th>
+                            <th>Hinh anh</th>
+                            <th>Ten hang</th>
+                            <th>Loai hang</th>
+                            <th>So luong</th>
+                            <th>Don gia</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr><tr>
+                            <th>6</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Tong</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html

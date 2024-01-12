@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mouse {
+            animation: flicker 1s steps(2) infinite
+        }
+        @keyframes flicker {
+            from {
+                border-color: transparent
+            }
+            to {
+                border-color: black
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>I'm a 
+        <span id="input">
+        </span>
+        <span 
+            class="mouse" 
+            style="border-right: 2px solid black;"
+        >
+        </span>
+    </div>
+
+
+
+    <script>
+        let str1 = "Quang"
+        let str2 = "Front-end Developer"
+        let str3 = "Student at HaNoi Open University"
+        const inner = document.querySelector("#input")
+        const typeText = (str, callback) => {
+            let idx = 0
+            const interval = setInterval(() => {
+                if (idx < str.length) {
+                    inner.innerHTML += str[idx]
+                    idx++
+                } else {
+                    clearInterval(interval)
+                    setTimeout(() => deleteText(str, callback), 2000)
+                }
+            }, 50)
+        }
+        const deleteText = (str, callback) => {
+            let idx = str.length
+            const interval = setInterval(() => {
+                if (idx >= 0) {
+                    inner.innerHTML = str.substring(0, idx)
+                    idx--
+                } else {
+                    clearInterval(interval)
+                    callback()
+                }
+            }, 50)
+        }
+        const startAnimation = () => {
+            typeText(str1, () => {
+                typeText(str2, () => {
+                    typeText(str3, startAnimation)
+                })
+            })
+        }
+        startAnimation();
+    </script>
+
+</body>
+</html>

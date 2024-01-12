@@ -1,0 +1,121 @@
+/* Đơn vị trong CSS */
+
+/* 
+    px, cm, mm => phổ biến nhất => hắc code => fix cứng => khi màn hình thay đổi nó không thay đổi => đơn vị tuyệt đối
+    %, rem, em, vh, vw =>  Đơn vị tương đối => không phải là fix cứng => co màn hình vao nó se co theo
+
+    //  rem, em, => dung cho css chữ ( text )
+    
+    vh : view height => chiều cao của màn hình 
+    vw : view width => chiều ngang của màn hình 
+
+    rem :nó sẽ luon ăn theo html
+    em : nó giống i như rem nó bị phụ thuộc nhưng khác là nó sẽ ăn theo thằng cha chứa nó có thuộc tính fontsize
+
+    => đơn vị dễ maintain nhất : rem (number one), em, layout : vh, vw, %
+    px => chắc chắn rằng trên pc mobile nó cùng kích thước nút
+
+    warning : chia layout cha to nhất dc phép dùng px nhưng thằng con tuyệt đối 0
+    
+    padding : khong lam thay doi vi tri, tao ra mot vien de gioi han dua con ben trong no
+    margin: no khong tao vien, no cung khong anh huong dua con ben trong the ma dc css margin, the ma bi css margin bi thay doi vi tri ( position )
+    
+    background-size: cover <=> object-fit: cover; nó cố gắng làm ảnh to nhất có thể vừa với kích thước mính set,  nó chấp nhận làm vỡ ảnh bằng cach là nó cắt ảnh nhưng làm cho đẹp nhất co thể
+    background-size: contain <=> object-fit: contain; nó cố gắng làm ảnh to nhất có thể vừa với kích thước mính set, nó đeo chap nhan làm vỡ anh bang cách là nó không cắt ảnh
+
+    => cover dung nhieu hon : card mua ban san pham anh thumbnail
+    => contain dung khi ma load nhung noi dung quan trong vi du : buil thanh toasn tien, anh dia chi
+    
+    calc(50vh - 100px);
+
+    : pausedu
+
+    ::after , ::before: pausedu lop giả thẻ giả
+    
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding: -20px;
+}
+
+.box {
+    width: 50vw;
+    height: 50vh;
+    /* border: 5px solid #ccc; */
+    margin: 0 auto;
+    /* margin-right: 50px; */
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+/* marigin, padding : 0 auto */
+
+img {
+    width: 200px;
+    height: 30px;
+    /* object-cai ri do*/
+    /* position : vi tri  default : center*/
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.image-div {
+    width: 100%;
+    background-size: cover;
+    /* background-position: ; */
+    background-image: url('https://www.invert.vn/media/uploads/uploads/2022/12/03143748-12-hinh-anh-dep.jpeg');
+}
+
+
+
+h1 {
+    text-align: justify;
+}
+
+/* padding */
+
+.children {
+    /* width: 300px;   px hac code */
+    /* height: 300px;  px hac code */
+    /*    width: 50%; don vi % tuong doi an theo thang cha chua no gan nhat
+    height: 50%; */
+    border: 3px solid red;
+}
+
+html {
+    font-size: 30px;
+}
+
+.box {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.div-1 {
+    margin-bottom: 10px;
+    height: calc(50vh - 100px);
+}
+
+.div-2 {
+    height: 100px;
+    position: relative;
+}
+
+.div-2::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+}

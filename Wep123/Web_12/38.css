@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOisoeuwgWlKfAoHNofWkDIaDtxy4cy5Ypg&usqp=CAU);
+    background-size: cover;
+}
+
+.box-menu {
+    background-color: rgb(21, 255, 41);
+    text-align: center;
+
+}
+
+.box-menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: aliceblue;
+
+}
+
+.box-menu ul li {
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+    /* background-color: rgb(255, 68, 0); */
+}
+
+.box-menu ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* .box-menu ul li a:hover {
+    border-radius: 2px;
+    color: aqua;
+} */
+
+/* .active {
+    color: aqua;
+    text-decoration: none;
+} */
+
+/* .active, */
+.box-menu ul li:hover {
+    background: brown;
+    border-radius: 5px;
+}
+
+.box-menu .fa-solid {
+    margin-right: 5px;
+}
+
+.box-submenu {
+    display: none;
+}
+
+.box-menu ul li:hover .box-submenu {
+    display: block;
+    position: absolute;
+    background-color: rgb(207, 134, 134);
+    margin-top: 15px;
+    margin-left: -15px;
+    margin: 0;
+    padding: 0;
+    top: 58px;
+    border-radius: 5px;
+
+}
+
+.box-menu ul li:hover .box-submenu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    /* bottom: 130px; */
+}
+
+.box-menu ul li:hover .box-submenu ul li {
+    width: 160px;
+    text-align: left;
+    border-bottom: dotted 1px #fff;
+    background: transparent;
+    padding: 10px;
+    margin: 5px;
+}
+
+.box-menu ul li:hover .box-submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.box-menu ul li:hover .box-submenu ul li a:hover {
+    color: rgb(50, 58, 205);
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.box-submenu-2 {
+    display: none;
+}
+
+.submenu-hover:hover .box-submenu-2 {
+    color: black;
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 135px;
+    background-color: rgb(237, 140, 22);
+}

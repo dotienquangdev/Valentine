@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: aliceblue;
+    margin: auto;
+    width: 100px;
+}
+
+.menu {
+    /* position: absolute; */
+    width: 100%;
+    background-color: violet;
+
+}
+
+input {
+    border: 3px;
+}
+
+.menu ul {
+
+    padding-left: 50px 0;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    margin: auto;
+}
+
+.b {
+    margin-top: 1px;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+}
+
+.body1 {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+}
+
+.c {
+    padding-left: 50px 0;
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 500px;
+    margin: auto;
+}
+
+
+.body-left {
+    margin: auto;
+
+}
+
+.body-right {
+    margin: auto;
+}
+
+.b input {
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.body-left-right {
+    padding-left: 1px;
+}
+
+.abc {
+    padding: 10px;
+}
+
+.body-left-left {
+    padding-left: 1px;
+}
+
+.abc {
+    padding: 2px;
+    margin: 2px;
+}
+
+.bcde {
+    width: 100px;
+    height: 10px;
+    padding: 10px;
+}
+
+.bcdef {
+    padding: 2px;
+    width: 100px;
+    height: 30px;
+}
+
+.bcdefg {
+    width: 300px;
+    height: 15px;
+}
+
+.body-right {
+    padding: 20px;
+}
+
+.body-right th {
+    padding: 3px 15px;
+}

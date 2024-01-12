@@ -1,0 +1,87 @@
+/* thẻ chia layout
+display:flex; thẻ chia ngang các cột display:flex;
++flex-disrection:colum;2 thẻ này đi với nhau nó sẽ bẻ nang cột sau đó bẻ dọc lại=>thẻ sẽ đẹp hơn(ứng dụng bán sản phẩm có đặt tiền mua) 
+magin:auto; thẻ cho ra giữa thẻ căn giữa 
+position: fixed; thẻ anư theo trình duyệt 
+width:px % vw; thẻ lấyc hiều ngang của màn hình.
+height: px % vw; thẻ lấy theo chiều dọc của màn hình. 
+padding : khong lam thay doi vi tri, tao ra mot vien de gioi han dua con ben trong no 
+margin: no khong tao vien, no cung khong anh huong dua con ben trong the ma dc css 
+margin, the ma bi css margin bi thay doi vi tri 
+(position) text-align: center; =căn giữa 
+justify-content:space-between; khoảng cách giữa 2 cột 
+position:flex; ăn theo trình duyệt. 
+margin {
+    thẻ di chuyển lề top: ;
+    right: ;
+    bottom: ;
+    left: ;
+}
+
+justify-conten:;
+thẻ căn giữa
+/* thẻ ảnh */
+/*
+color:; thẻ màu sắc. 
+background-color:; thẻ cho font màu. 
+backgrounf-size:cover; thẻ cho ảnh ko bị vỡ. 
+background-size:contain; thẻ làm cho ảnh to nhất có thể 
+boder-radius: px;thẻ bo tròn ảnh. 
+boder: 1px solid #; thẻ tạo khung bao quanh 1 cái j đó 
+flex-wrap:wrap; nếu width đủ thì sẽ tự động xuống dòng nếu không có nó ->sẽ thành 1 hàng
+/* thẻ chữ */
+/*
+font-family:; thẻ font của chữ 
+font-size:; thẻ tăng cỡ chữ
+/* thẻ menu */
+/*
+list-style: none; thẻ xóa dấu chấmn sau thẻ a */
+/* Thuộc tính của căn chữ //////////////////////////////////////////*/
+/* 
+    text-align: center; can giua
+    text-align: left; can trai
+    text-align: right; can phai
+    text-align: justify; can deu 2 ben
+*/
+
+/* thuộc tính cửa chữ //////////////////////////////////////*/
+/* text-trorm:uppercase; viết chữ hoa
+text-trorm:lowercase; Viết chữ thường
+text-trorm:capitalize; chữ cái đầu viết hoa */
+
+
+/* Position(VỊ trí)///////////////// */
+* {
+    position: relative;
+    /*Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top right bottom left */
+    position: absolute;
+    /*Vị trí tuyệt đối cho các thành phần bao ngoài hoặc cửa sổ trình duyệt */
+    position: fixed;
+    /*Được định vị so với khung nhìn, có nghĩa là nó luân ở 1 vị trí cố định ngay cả khi được cuộn, các thuộc tính top right bottom và left được sử dụng để định vị element */
+    position: static;
+    /*Vị trí ở trạng thái mặc đinh cửa phần từ tưc là các tuôc tính top left right bottom không có hiệu lực*/
+}
+
+#{
+ justify-content: center;
+justify-content: flex-end;
+/* ?căn lề sang phải */
+justify-content: space-between;
+/* các box tự căn đèu với nhau ,các box đầu vào cuối sẽ căn sát lề */
+justify-content: space-evenly;
+/* Khỏng cách giữa các box và lề đeeeuf như nhau */
+}
+
+. {
+    flex-direction: row-reverse;
+    /* 
+    cũng di chuyển các boxx sang phải
+     */
+}
+
+. {
+    align-items: flex-end;
+    /*  cho 1 hang cac box sat xuong duoi    */
+    align-content: flex-end;
+    /* dung cho nhieu dong xuong duoi va dinh lien nhau  */
+}

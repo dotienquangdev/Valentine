@@ -1,0 +1,52 @@
+.buoi2 {
+    /* background-color: aqua; */
+    /* width: 100px;
+    height: 100px; */
+    color: blue;
+}
+
+.buoi2 ul {
+    display: flex;
+}
+
+.buoi2 ul li {
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    font-size: 20px;
+    /* margin: 5px; */
+    list-style: none;
+    /* padding: 5px; */
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.buoi2a {
+    /* z-index: inherit; */
+    position: relative;
+
+}
+
+.buoi2a .box1 {
+    z-index: inherit;
+    z-index: 1;
+    top: 0px;
+    position: absolute;
+}
+
+.buoi2a .box2 {
+    z-index: 2;
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+    /* position: absolute; */
+}
+
+.buoi2a .box3 {
+    top: 50px;
+    z-index: 3;
+    left: 50px;
+    position: absolute;
+
+}

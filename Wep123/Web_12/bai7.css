@@ -1,0 +1,33 @@
+.chu {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+
+a.chu {
+    list-style: none;
+}
+
+.chu span {}
+
+.chu::after {
+    content: '';
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: blue;
+    width: 0px;
+    height: 22px;
+    background-color: rgb(183, 121, 28);
+    transition: 0.4s;
+}
+
+.ba {
+    position: absolute;
+}
+
+.chu:hover::after {
+    /* opacity: 1; */
+    width: 100%;
+}
