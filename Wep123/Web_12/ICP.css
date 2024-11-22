@@ -966,7 +966,7 @@ a {
 
     .image-in-content-icon:hover {
         border: 8px solid rgb(125, 252, 233);
-        transition: 1s;
+        transition: 0.5s;
     }
 
     .image-in-letter {
