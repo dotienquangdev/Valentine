@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    padding: 1%;
+}
+
+.layout-logo {
+    width: 50%;
+}
+
+.layout-input {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+    /* padding-top: 1%; */
+}
+
+.layout-logIn {}
+
+.layout-logOut {}
+
+.layout-body {}
+
+.layout-footer {
+    position: relative;
+    background-color: orange;
+    color: white;
+    /* margin-top: 100%; */
+    border-top: 1px solid white;
+    text-align: center;
+}

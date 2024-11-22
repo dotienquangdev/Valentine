@@ -1,0 +1,37 @@
+.modal {
+    background-color: rgb(45, 44, 44);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.modal_body1 {
+    background: #fff;
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal_close2 {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    border: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: center;
+}
+
+.modal_content {}

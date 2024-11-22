@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <fieldset id = "addHangSX">
+            <div id = "ctnList">
+                <labe for = "list">Danh sách hãng sản xuất CPU</label>
+                    <select id = "list">
+                        <option>Intel</option>
+                    </select>
+            </div>
+            
+            <div id = "ctnLuu">
+                <labe for = "luu">Hãng </label>
+                    <input id = "luu" type="text">
+                    <div id = "btnsLuu">
+                        <button id = "btnHuy" type = "button" onclick="Huy()">Hủy</button>
+                        <button id = "btnLuu" onclick="Luu()" type = "button">Lưu</button>
+                    </div>
+                
+            </div>
+            <div id = "buttonAdd">
+                <button id = "btnHuy" type = "button" onclick="Huy()">Hủy</button>
+                <button id = "btnAdd" onclick="add()" type = "button">Thêm</button>
+            </div>
+            
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:Button ID="btnCheck" runat="server" Text="Kiểm tra" OnClick="btnCheck_Click" />
+            <asp:Label ID="lblResult" runat="server"></asp:Label>
+            <br />
+            <asp:RegularExpressionValidator ID="regPassword" runat="server"
+                ControlToValidate="txtPassword"
+                ValidationExpression="^(?=[0-9]{3}[^\w\s])[0-9]{3}[^\w\s].{0,4}$"
+                ErrorMessage="Mật khẩu không hợp lệ. Mật khẩu phải bắt đầu bằng 3 số và có 1 ký tự đặc biệt, có tối đa 8 ký tự." />
+        </div>
+        </form> <form id="form1" runat="server">
+        <div>
+            
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            <asp:Button ID="btnCheck" runat="server" Text="Kiểm tra" OnClick="btnCheck_Click" />
+            <asp:Label ID="lblResult" runat="server"></asp:Label>
+            <br />
+            <asp:RegularExpressionValidator ID="regPassword" runat="server"
+                ControlToValidate="txtPassword"
+                ValidationExpression="^(?=[0-9]{3}[^\w\s])[0-9]{3}[^\w\s].{0,4}$"
+                ErrorMessage="Mật khẩu không hợp lệ. Mật khẩu phải bắt đầu bằng 3 số và có 1 ký tự đặc biệt, có tối đa 8 ký tự." />
+        </div>
+        </form>
+    <script src = "script.js">
+
+
+
+
+
+function kiemTraMatKhau(password) {
+    // Kiểm tra xem mật khẩu có bắt đầu bằng 3 số không
+    var startsWithThreeNumbers = /^\d{3}/.test(password);
+    
+    // Kiểm tra xem mật khẩu có chứa ít nhất một ký tự đặc biệt không
+    var containsSpecialCharacter = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(password);
+    
+    // Trả về kết quả
+    return startsWithThreeNumbers && containsSpecialCharacter;
+}
+
+// Sử dụng hàm kiểm tra mật khẩu
+var password = "123@Abc";
+if (kiemTraMatKhau(password)) {
+    console.log("Mật khẩu hợp lệ!");
+} else {
+    console.log("Mật khẩu không hợp lệ!");
+}
+
+
+
+
+function kiemTraMatKhau(password) {
+    // Kiểm tra xem mật khẩu có bắt đầu bằng 3 số không
+    var startsWithThreeNumbers = /^\d{3}/.test(password);
+    
+    // Kiểm tra xem mật khẩu có chứa ít nhất một ký tự đặc biệt không
+    var containsSpecialCharacter = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(password);
+    
+    // Kiểm tra xem mật khẩu có độ dài từ 4 đến 8 ký tự không
+    var isLengthValid = password.length >= 4 && password.length <= 8;
+    
+    // Trả về kết quả
+    return startsWithThreeNumbers && containsSpecialCharacter && isLengthValid;
+}
+
+// Sử dụng hàm kiểm tra mật khẩu
+var password = "123@Abc";
+if (kiemTraMatKhau(password)) {
+    console.log("Mật khẩu hợp lệ!");
+} else {
+    console.log("Mật khẩu không hợp lệ!");
+}
+
+
+if (kiemTraMatKhau(password)) {
+                password.classList.add('err');
+                document.getElementById('trong4').style.display = 'block';
+                ok = false;
+            } else {
+                password.classList.remove('err');
+                document.getElementById('trong4').style.display = 'none';
+            }
+
+    </script>
+</body>
+</html>

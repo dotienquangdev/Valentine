@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Định dạng chữ trên website</title>
+  
+</head>
+
+<body>
+    <ul>
+        <li>
+            <p>Bún bò</p>
+        </li>
+        <li>
+            <p>Bún chả ngon</p>
+        </li>
+        <li>
+            <p>Bánh mỳ không</p>
+        </li>
+    </ul>
+    <table>
+        <tr>
+            <td><input type="checkbox" value="In đậm" name="chkIndam" onchange="perform(this)"> In đậm</td>
+            <td><input type="checkbox" value="In nghiêng" name="chkInnghieng" onchange="perform(this)"> In nghiêng</td>
+            <td><input type="checkbox" value="Gạch chân" name="chkGachchan" onchange="perform(this)">Gạch chân</td>
+            <td><input type="checkbox" value="Chọn all" name="chkGChonall" onchange="chkAll(this)">Chọn all</td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        function perform(chkControl) {
+            var pElements = document.getElementsByTagName('p');
+            switch (chkControl.name) {
+                case 'chkIndam':
+                    for (var i = 0; i < pElements.length; i++) {
+                        pElements[i].innerHTML = chkControl.checked == true ? "<b>" + pElements[i].innerHTML + "<b>" : pElements[i].textContent;
+                    }
+                    break;
+                case 'chkInnghieng':
+                    for (var i = 0; i < pElements.length; i++) {
+                        pElements[i].innerHTML = chkControl.checked == true ? "<i>" + pElements[i].innerHTML + "<i>" : pElements[i].textContent;
+                    }
+                    break;
+                case 'chkGachchan':
+                    for (var i = 0; i < pElements.length; i++) {
+                        pElements[i].innerHTML = chkControl.checked == true ? "<u>" + pElements[i].innerHTML + "<u>" : pElements[i].textContent;
+                    }
+                    break;
+            }
+
+          
+            //     if (chkControl.name == 'chkIndam') {
+            //         for (var i = 0; i < pElements.length; i++) {
+            //             pElements[i].innerHTML = chkControl.checked == true ? "<b>" + pElements[i].innerHTML + "<b>" : pElements[i].textContent;
+            //         }
+            //     }
+            //     if (chkControl.name == 'chkInnghieng') {
+            //         for (var i = 0; i < pElements.length; i++) {
+            //             pElements[i].innerHTML = chkControl.checked == true ? "<i>" + pElements[i].innerHTML + "<i" : pElements[i].textContent;
+            //         }
+            //     }
+            //     if (chkControl.name == 'chkGachchan') {
+            //         for (var i = 0; i < pElements.length; i++) {
+            //             pElements[i].innerHTML = chkControl.checked == true ? "<u>" + pElements[i].innerHTML + "<u>" : pElements[i].textContent;
+            //         }
+            //     }
+
+
+
+        }
+
+    function chkAll(chkControl){
+
+    var arrCheckboxes = document.getElementsByTagName('input');
+    var arrChkNames = ['chkIndam','chkInnghieng','chkGachchan'];
+    
+    for(var i=0;i<arrCheckboxes.length;i++){
+        if(arrCheckboxes[i].type=='checkbox' && arrChkNames.includes(arrCheckboxes[i].name)){
+            // arrCheckboxes[i].checked = chkControl.checked;
+            arrCheckboxes[i].click();
+        }
+}
+
+// const chkGChonall = document.name("chkGChonall");
+// chkGChonall.onclick.add("chkIndam");
+// chkGChonall.onclick.add("chkInnghieng");
+// chkGChonall.onclick.add("chkGachchan");
+}
+    </script>
+</body>
+
+</html>

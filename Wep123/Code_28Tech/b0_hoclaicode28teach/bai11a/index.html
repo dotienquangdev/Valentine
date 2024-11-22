@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai11a</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+}
+
+header {
+    width: 30%;
+    margin: 50px auto;
+    animation: headShake 2s ease-in-out forwards; 
+}
+
+table {
+    width: 500px;
+    height: 40px;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.bodeRed {
+    border: 2px solid red;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+section{
+    border-radius: 10px;
+    width: 28%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid black;
+    animation: shakeY 2s ease-in-out forwards;
+}
+
+table th{
+    background-color: antiquewhite;
+}
+table tr:nth-child(even){
+background-color: aqua;
+}
+table tr:nth-child(odd){
+background-color: rgb(207, 211, 127);
+}
+</style>
+<body >
+    <section>
+        <input type="text" name="email" id="text" placeholder="them">
+        <input type="text" id="ten" placeholder="them ten">
+        <input type="date" id="ngaysinh" placeholder="ngaysinh">
+    <button id="add" onclick="them()">Them</button>
+    <button id="huy" onclick="huy()" >Huy</button>
+    </section>
+    <table id="table" style="border: 1px;">
+        <tr>
+            <th>email</th>
+        <th>ten</th>
+        <th>ngay Sinh</th>
+        </tr>
+        <!-- <div class="result" id="result"></div> -->
+    </table>
+    <script>
+         data ={
+            text:String,
+            ten:String,
+            ngaysinh:Date
+        }
+        var dulieu=[{
+            text:'dotienquang@12',
+            ten:'quang',
+            ngaysinh:'11-11-2000'
+        },{
+            text:'do quang',
+            ten:'quang',
+            ngaysinh:'11-11-2000'
+        }
+    ];
+        var text = document.getElementById("text");
+        var adD = document.getElementById("add");
+        var huy = document.getElementById("huy");
+        var taBle = document.getElementById("table")
+
+      
+        huy.addEventListener("click",()=>{
+            taBle.innerHTML="";
+            localStorage.removeItem("text");
+        })
+        function addData(element){
+            var row = table.insertRow();
+            localStorage.row();
+            row.insertCell().innerHTML = element.text;
+            row.insertCell().innerHTML=element.ten;
+            row.insertCell().innerHTML=element.ngaysinh;
+        }
+       
+        function myFunction(){
+            dulieu.forEach(function(element){
+                addData(element);
+            },this);
+        }
+        function them(){
+            var text = document.getElementById("text").value;
+            var ten = document.getElementById("ten").value;
+            var ngaysinh = document.getElementById("ngaysinh").value;
+ 
+            if(text == ""){
+                alert("Nhap email");
+                document.getElementById("text").focus();
+            }else if(ten == ""){
+                document.getElementById("ten").focus();
+            }else if(ngaysinh ==""){
+                document.getElementById("ngaysinh").focus();
+            }
+            else{
+                var check = false;
+                dulieu.forEach(function(e){
+                    if(e.text == document.getElementById("text").value){
+                        check = true;
+                        alert("trung ten");
+                        document.getElementById("text").focus();
+                    }
+                },this)
+            }
+            if(check == false){
+                var vxl={
+                    text: document.getElementById("text").value,
+                    ten: document.getAnimations("ten").value,
+                    ngaysinh: document.getElementById("ngaysinh").value
+                };
+                dulieu.push(vxl);
+                addData(vxl);
+                // huy();
+            }
+        }
+        function huy(){
+            document.getElementById('text').value = null;
+            document.getElementById('ten').value = null;
+            document.getElementById('ngaysinh').value = null;
+        }
+    </script>
+    <!-- <script>
+        var text = document.querySelector("#text");
+        var add = document.querySelector("#add");
+        var huy = document.querySelector("#huy");
+
+        data = {
+            ten:String
+        };
+
+        var dulieu = [{
+            ten:'Do tien quang'
+        },{
+            ten:'quang oke'
+        }]
+        var table = document.querySelector("#table");
+
+        function addData(element){
+            var row = table.insertRow();
+            row.insertCell().innerHTML = element.ten;
+        }
+        function myFunction(){
+            dulieu.forEach(function (element){
+                addData(element);
+            },this);
+        }
+        function them(){
+            var ten = document.getElementById("add").value;
+            if(ten = ""){
+                alert("Nhap ten");
+                ten.focus();
+            }else
+            {
+                var check = false;
+                dulieu.forEach(function (e){
+                    if(e.ten == document.getElementById("add").value){
+                        check = true;
+                        alert("trung teen");
+                        ten.focus();
+                    }
+                },this);
+                if(check == false){
+                    var vx ={
+                        ten:document.querySelector("#add").value
+                    };
+                    dulieu.push(vx);
+                    addData(vx);
+                    // huy();
+                }
+            }
+        }
+         function huy(){
+            ten.value = null;
+         }
+        </script> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

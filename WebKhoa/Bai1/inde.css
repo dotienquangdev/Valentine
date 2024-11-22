@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-color: #c68fc9;
+}
+
+.box {
+    margin-top: 15%;
+    display: grid;
+    place-items: center;
+
+}
+
+.box img {
+    border-radius: 50%;
+}

@@ -1,0 +1,27 @@
+.topicsAll {
+    width: 100%;
+    display: flex;
+    margin: 3%;
+}
+
+.top_topics {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* 
+.topics_box {
+    width: 100%;
+} */
+.topic_item {}
+
+.topics_item {
+    width: 100%;
+}

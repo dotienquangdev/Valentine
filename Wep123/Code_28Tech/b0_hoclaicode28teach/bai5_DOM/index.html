@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .light{
+            background-color: aqua;
+        }
+        .dark{
+            background-color: blueviolet;
+            color: aliceblue;
+            /* height: 50px; */
+        }
+        .dark1{
+            background-color: rgb(207, 156, 255);
+            color: aliceblue;
+            padding: 5px;
+            /* height: 50px; */
+        }
+        .hiChaocau{
+            background-color: rgb(255, 164, 164);
+        }
+        a{
+            /* text-align: center; */
+            /* align-items: center; */
+            list-style: none;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        .hi{
+            background-color: brown;
+            padding: 1px;
+            color: blue;
+        }
+    </style>
+
+    <div class="light" id="box">Noi dung the h2</div>
+    <div class="light" id="box">Noi dung the h2</div>
+    <div class="light" id="box">Noi dung the h2</div>
+    <div class="light" id="box">Noi dung the h2</div>
+
+
+    <h3 class="tag">The h3 tag</h3>
+    <h3 class="tag">The h3 tag</h3>
+    <h3 class="tag">The h3 tag</h3>
+    <h3 class="tag">The h3 tag</h3>
+
+
+    <div class="div1" id="div3">Hi 0</div>
+    <div class="div2" id="div1">HI 1</div>
+    <div class="div1">Hi 3</div>
+    <div class="div1">Hi 4</div>
+
+    <div class="div3">div 3 di</div>
+    <div class="div3">div 3 di</div>
+    <div class="div3">div 3 di</div>
+
+    <div class="box">
+        <div class="box1">
+            <div class="box1a">
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+            </div>
+            <div class="box1aa">
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+            </div>
+            <div class="box1aa">
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+                <a href="">Hi chao cau</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+ 
+        var box1a = document.querySelector(".box .box1 .box1a");
+        box1a.classList.add("hiChaocau");
+        console.log(box1a);
+
+        var box1aa = document.querySelectorAll(".box .box1 .box1aa");
+        // box1a.classList.add("hiChaocau");
+        [...box1aa].forEach(ii=>{
+            ii.classList.add("hi")
+        })
+        console.log(box1aa);
+
+        const box = document.getElementById("box");
+        console.log(box);
+        box.classList.add("dark");
+        var tag1 = document.getElementsByClassName("tag");
+        console.log(tag1);
+        
+        
+        // [...tag1].forEach(item =>console.log(item));
+        [...tag1].forEach(item =>{
+            item.classList.add("dark1")
+        });
+        // tag1.classList.add("dark1");
+        console.log(...tag1)
+
+
+        var div1 = document.getElementById("div1");
+        div1.classList.add("dark")
+
+        var div2 = document.getElementsByClassName("div1");
+        // console.log(div1);
+        // div1.classList.add("dark1")
+        [...div2].forEach(dd =>{
+            dd.classList.add("dark1")
+        })
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

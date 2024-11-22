@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    /* height: 100%; */
+    width: 100%;
+    height: 100vh;
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.size {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: white;
+    background-color: yellow;
+    width: 100%;
+    height: 15%;
+    overflow-y: auto;
+    margin: 10px;
+    animation:
+        Quang 2s linear infinite alternate;
+}
+
+@keyframes Quang {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.clo-5 {
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    /* background-color: bisque; */
+    width: 100%;
+    height: 70%;
+}
+
+.sidebar {
+    margin: 0px 10px 10px 10px;
+    width: 30%;
+    background-color: blueviolet;
+}
+
+.bin {
+    width: 70%;
+}
+
+main {
+    margin: 0px 10px 10px 0px;
+    height: 50%;
+    background-color: darkorange;
+}
+
+section {
+    margin: 0px 10px 20px 0px;
+    background-color: blue;
+}
+
+.content {
+    margin: 0px 10px 20px 0px;
+    background-color: rebeccapurple;
+}
+
+
+
+.jar {
+    display: flex;
+    height: 50%;
+}
+
+footer {
+    margin: 10px 0px 20px 10px;
+    width: 100%;
+    background-color: rgb(92, 255, 106);
+    height: 15%;
+}

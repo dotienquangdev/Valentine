@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="myFunction()">
+    <header>
+        <table id="mytable">
+            <tr>
+                <th>STT</th>
+                <th>Tên VXL</th>
+                <th>Hãng sx</th>
+                <th>Ngày ra mắt</th>
+                <th>Giá (vnđ)</th>
+            </tr>
+        </table>
+        <br>
+    </header>
+    <section class="hi">
+        <span>Tên VXL</span>
+        <input type="text" id="Ten">
+        <span>Hãng</span>
+        <input type="text" id="Hang">
+        <span>Ngày ra mắt</span>
+        <input type="date" id="NgaySX">
+        <span>Giá</span>
+        <input type="text" id="Gia">
+        <button id="btnHuy" onclick="huy()">Huỷ</button>
+        <button id="btnThem" onclick="them()">Thêm</button>
+    </section>
+    <script>
+        data = {
+    STT: Int32Array,
+    Ten: String,
+    Hang: String,
+    NgaySX: Date,
+    Gia: Int32Array
+};
+
+var dulieu = [{
+    STT: 1,
+    Ten: 'Core 1234567',
+    Hang: 'Intellll',
+    NgaySX: '20-11-2011',
+    Gia: 123456
+},
+{
+    STT: 2,
+    Ten: 'Core 6789987',
+    Hang: 'Illlllllll',
+    NgaySX: '21-08-2012',
+    Gia: 4530000
+}
+];
+
+var table = document.getElementById('mytable');
+
+function addData(element) {
+    var row = table.insertRow();
+    row.insertCell().innerHTML = element.STT;
+    row.insertCell().innerHTML = element.Ten;
+    row.insertCell().innerHTML = element.Hang;
+    row.insertCell().innerHTML = element.NgaySX;
+    row.insertCell().innerHTML = formatMoneyVND(element.Gia);
+}
+
+function myFunction() {
+    dulieu.forEach(function (element) {
+        addData(element);
+    }, this);
+}
+
+function them() {
+    var gia = parseFloat(document.getElementById('Gia').value);
+    var gia1 = document.getElementById('Gia').value;
+    var ten = document.getElementById('Ten').value;
+    var hang = document.getElementById('Hang').value;
+    var ngaysx = document.getElementById('NgaySX').value;
+    // var text = "Vui long nhap:";
+    // var flg = true;
+    var thieuthongtin = [gia1, ten, hang, ngaysx];
+    var r = 0;
+    // for (var i = 0; i < thieuthongtin.length - 1; i++) {
+    //     if (thieuthongtin[i].value.trim() == "") {
+    //         text += "   " + thieuthongtin[i].name + "\n";
+    //         thieuthongtin[i].classList.add("bodeRed");
+    //         flg = false;
+    //         thieuthongtin[i].focus();
+    //     }
+    // }
+
+    if (ten == "") {
+        alert("Nhập tên.");
+        document.getElementById('Ten').focus();
+        thieuthongtin.push("Nhập tên"); r++;
+    } else if (hang == "") {
+        alert("Nhập hãng sản xuất.");
+        document.getElementById('Hang').focus();
+        thieuthongtin.push("Nhập hãng sản xuất"); r++;
+    } else if (ngaysx === "") {
+        alert("Nhập ngày sản xuất.");
+        document.getElementById('NgaySX').focus();
+        thieuthongtin.push("Nhập ngày sản xuất"); r++;
+    }
+    else if (gia < 1) {
+        alert("Nhập giá > 0");
+        document.getElementById('Gia').focus();
+    }
+    else if (document.getElementById('Gia') == "" || document.getElementById('Gia').value.trim() === '') {
+        // || document.getElementById('Gia').value.trim() === ''
+        alert("Nhập giá.");
+        document.getElementById('Gia').focus(); r++;
+        // thieuthongtin.push("Nhap gia");
+    }
+    else if (parseInt(document.getElementById('Gia').value) == "NaN" || isNaN(document.getElementById('Gia').value)) {
+        alert("Giá phải là số.");
+        document.getElementById('Gia').focus();
+    } else if (Date.parse(document.getElementById('NgaySX').value) > Date.now()) {
+        alert("Ngày sản xuất không được lớn hơn ngày hiện tại.");
+        document.getElementById('NgaySX').focus();
+    } else {
+        var check = false;
+        dulieu.forEach(function (e) {
+            if (e.Ten == document.getElementById('Ten').value) {
+                check = true;
+                alert("Trùng tên VLX.");
+                document.getElementById('Ten').focus();
+            }
+        }, this);
+        if (check == false) {
+            var vxl = {
+                STT: dulieu.length + 1,
+                Ten: document.getElementById('Ten').value,
+                Hang: document.getElementById('Hang').value,
+                NgaySX: document.getElementById('NgaySX').value,
+                Gia: parseInt(document.getElementById('Gia').value)
+            };
+            dulieu.push(vxl);
+            addData(vxl);
+            huy();
+        }
+    }
+    if (thieuthongtin.length > 0) {
+        // alert("Nhập: " + thieuthongtin.name);
+        return false;
+    }
+}
+
+function huy() {
+    document.getElementById('Ten').value = null;
+    document.getElementById('Hang').value = null;
+    document.getElementById('NgaySX').value = null;
+    document.getElementById('Gia').value = null;
+}
+
+function formatMoneyVND(money) {
+    if (money == 0) {
+        return 0;
+    }
+    var tmp = money.toString().split('').reverse().join('');
+    var a = [];
+    var len = tmp.length;
+    var b = true;
+    while (b) {
+        if (tmp.indexOf(",") > 0) {
+            tmp = tmp.replace(",", "");
+            b = true;
+        } else {
+            b = false;
+        }
+    }
+    b = true;
+    while (b) {
+        len = tmp.length;
+        if (len % 3 != 0) {
+            tmp = tmp.toString() + '0';
+            b = true;
+        } else {
+            b = false;
+        }
+    }
+    for (var i = 0; i < tmp.length; i += 3) {
+        a.push(tmp[i] + tmp[i + 1] + tmp[i + 2]);
+    }
+    tmp = a.toString().split('').reverse().join('');
+    b = true;
+    while (b) {
+        if (tmp[0] == 0 || tmp[0] == ',') {
+            tmp = tmp.substr(1);
+            b = true;
+        } else {
+            b = false;
+        }
+    }
+    for (var index = 0; index < tmp.length; index++) {
+        if (tmp[index] == ',')
+            tmp = tmp.replace(',', '.');
+    }
+    return tmp;
+}
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

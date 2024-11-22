@@ -1,0 +1,1800 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Do Tien Quang",
+      "email": "dotienquang1@gmail.com",
+      "password": "Quang@12",
+      "token": "bkP9VQydMBRmW67obqD7"
+    },
+    {
+      "id": 2,
+      "fullName": "Do Tien Quang2",
+      "email": "dotienquang2@gmail.com",
+      "password": "Quang@12",
+      "token": "ksZitkpwbbPF3fdjbQWh"
+    },
+    {
+      "id": 3,
+      "fullName": "Do Tien Quang3",
+      "email": "dotienquang3@gmail.com",
+      "password": "Quang@12",
+      "token": "abVy7NJdWVNgqGcCD9Lo"
+    },
+    {
+      "id": 4,
+      "fullName": "Do Tien Quang4",
+      "email": "dotienquang4@gmail.com",
+      "password": "Quang@12",
+      "token": "tq7nF9XpG3wUnr1U76P5"
+    },
+    {
+      "id": 5,
+      "fullName": "Do Tien Quang5",
+      "email": "dotienquang5@gmail.com",
+      "password": "Quang@12",
+      "token": "NU2pOY2SHfNXYdeoPuTO"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "HTML5"
+    },
+    {
+      "id": 2,
+      "name": "CSS#"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS"
+    },
+    {
+      "id": 5,
+      "name": "Java"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "questionsAll": [
+        {
+          "id": 1,
+          "topicId": 1,
+          "question": "React là gì?",
+          "answers": [
+            "Một framework phát triển frontend của Google",
+            "Một thư viện JavaScript để xây dựng giao diện người dùng",
+            "Một ngôn ngữ lập trình mới",
+            "Một công cụ để phát triển backend"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "topicId": 1,
+          "question": "JSX là gì?",
+          "answers": [
+            "Một ngôn ngữ lập trình mới",
+            "Một kiểu định dạng dữ liệu",
+            "Một cú pháp mở rộng cho JavaScript",
+            "Một framework JavaScript"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "topicId": 1,
+          "question": "State trong React dùng để làm gì?",
+          "answers": [
+            "Để lưu trữ các thuộc tính của component",
+            "Để lưu trữ trạng thái hiện tại của component",
+            "Để quản lý dữ liệu toàn cục của ứng dụng",
+            "Để định nghĩa các phương thức của component"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "topicId": 1,
+          "question": "Props trong React có thể được thay đổi bên trong component không?",
+          "answers": [
+            "Có",
+            "Không"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "topicId": 1,
+          "question": "React Hook nào dùng để quản lý state trong function component?",
+          "answers": [
+            "useEffect",
+            "useContext",
+            "useState",
+            "useReducer"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "topicId": 1,
+          "question": "Lifecycle method 'componentDidMount' tương đương với hook nào trong React function component?",
+          "answers": [
+            "useEffect với dependency array rỗng",
+            "useEffect mà không có dependency array",
+            "useState",
+            "useContext"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 7,
+          "topicId": 1,
+          "question": "Phương thức nào được sử dụng để render một React component vào DOM?",
+          "answers": [
+            "ReactDOM.render()",
+            "React.render()",
+            "renderComponent()",
+            "DOM.render()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 8,
+          "topicId": 1,
+          "question": "Cách nào là đúng để tạo một component trong React?",
+          "answers": [
+            "function MyComponent() { return <div>Hello</div> }",
+            "const MyComponent = () => <div>Hello</div>",
+            "class MyComponent extends React.Component { render() { return <div>Hello</div> } }",
+            "Tất cả các cách trên"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 9,
+          "topicId": 1,
+          "question": "Làm cách nào để truyền dữ liệu từ component cha xuống component con?",
+          "answers": [
+            "Thông qua state",
+            "Thông qua props",
+            "Thông qua context",
+            "Thông qua useEffect"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "topicId": 1,
+          "question": "Sự khác nhau giữa state và props là gì?",
+          "answers": [
+            "State là dữ liệu tĩnh, props là dữ liệu động",
+            "State có thể thay đổi bên trong component, props thì không",
+            "Props có thể thay đổi bên trong component, state thì không",
+            "Không có sự khác nhau giữa state và props"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 11,
+          "topicId": 1,
+          "question": "Sự kiện nào sẽ kích hoạt lại quá trình render của component?",
+          "answers": [
+            "Khi state thay đổi",
+            "Khi props thay đổi",
+            "Cả A và B",
+            "Khi bất kỳ phần tử nào trong DOM thay đổi"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 12,
+          "topicId": 1,
+          "question": "React được phát triển bởi công ty nào?",
+          "answers": [
+            "Google",
+            "Facebook",
+            "Microsoft",
+            "Apple"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 13,
+          "topicId": 1,
+          "question": "Component trong React là gì?",
+          "answers": [
+            "Một phần nhỏ của UI",
+            "Một đoạn mã HTML",
+            "Một đoạn mã CSS",
+            "Một đoạn mã JavaScript"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 14,
+          "topicId": 1,
+          "question": "React có phải là framework không?",
+          "answers": [
+            "Có",
+            "Không"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 15,
+          "topicId": 1,
+          "question": "Sử dụng React có cần phải cài đặt thêm thư viện bổ sung không?",
+          "answers": [
+            "Có",
+            "Không"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 1,
+          "question": "Hook nào trong React dùng để quản lý side effect?",
+          "answers": [
+            "useState",
+            "useEffect",
+            "useReducer",
+            "useContext"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 17,
+          "topicId": 1,
+          "question": "Thành phần nào trong React giúp chia sẻ dữ liệu giữa các component không liên quan?",
+          "answers": [
+            "Props",
+            "State",
+            "Context",
+            "Lifecycle methods"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 18,
+          "topicId": 1,
+          "question": "Đâu là phương thức để cập nhật state trong React class component?",
+          "answers": [
+            "this.state",
+            "this.setState()",
+            "setState()",
+            "useState()"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "topicId": 1,
+          "question": "React hỗ trợ server-side rendering không?",
+          "answers": [
+            "Có",
+            "Không"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 20,
+          "topicId": 1,
+          "question": "Virtual DOM trong React là gì?",
+          "answers": [
+            "DOM thật của trình duyệt",
+            "Một bản sao của DOM thật",
+            "Một thư viện JavaScript khác",
+            "Một API để thao tác với DOM"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 21,
+          "topicId": 1,
+          "question": "ComponentDidMount là gì?",
+          "answers": [
+            "Một lifecycle method trong React class component",
+            "Một function trong React",
+            "Một component trong React",
+            "Một hook trong React"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 22,
+          "topicId": 1,
+          "question": "Sự khác nhau giữa function component và class component là gì?",
+          "answers": [
+            "Function component có thể sử dụng state, class component thì không",
+            "Class component có thể sử dụng state, function component thì không",
+            "Function component không sử dụng lifecycle methods, class component thì có",
+            "Class component không sử dụng lifecycle methods, function component thì có"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 23,
+          "topicId": 1,
+          "question": "Redux là gì?",
+          "answers": [
+            "Một framework của React",
+            "Một thư viện quản lý state cho React",
+            "Một công cụ để xây dựng UI",
+            "Một API để quản lý dữ liệu"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 24,
+          "topicId": 1,
+          "question": "useReducer hook được sử dụng khi nào?",
+          "answers": [
+            "Khi state phức tạp hoặc cần logic cập nhật phức tạp",
+            "Khi cần quản lý side effect",
+            "Khi cần chia sẻ dữ liệu giữa các component",
+            "Khi cần tạo một context"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 25,
+          "topicId": 1,
+          "question": "React hỗ trợ TypeScript không?",
+          "answers": [
+            "Có",
+            "Không"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 26,
+          "topicId": 26,
+          "question": "HTML là viết tắt của...?",
+          "answers": [
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyper Text Markup Language"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 27,
+          "topicId": 27,
+          "question": "Ai là người đưa ra các tiêu chuẩn web ?",
+          "answers": [
+            "Tổ chức World Wide Web Consortium (W3C)",
+            "Apple",
+            "Google",
+            "Microsoft"
+          ],
+          "correctAnswer": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questionsHTML": [
+        {
+          "id": 1,
+          "topicId": 2,
+          "question": "HTML là viết tắt của gì?",
+          "answers": [
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyper Text Markup Language"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "topicId": 2,
+          "question": "Thẻ HTML nào được sử dụng để tạo ra một liên kết?",
+          "answers": [
+            "<link>",
+            "<a>",
+            "<href>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "topicId": 2,
+          "question": "Thẻ HTML nào được sử dụng để chèn một hình ảnh?",
+          "answers": [
+            "<img>",
+            "<image>",
+            "<src>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "topicId": 2,
+          "question": "Thuộc tính nào của thẻ <img> để xác định đường dẫn của hình ảnh?",
+          "answers": [
+            "href",
+            "src",
+            "alt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "topicId": 2,
+          "question": "Thẻ HTML nào được sử dụng để tạo ra một tiêu đề lớn nhất?",
+          "answers": [
+            "<h6>",
+            "<head>",
+            "<h1>"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo ra một danh sách không thứ tự?",
+          "answers": [
+            "<ol>",
+            "<ul>",
+            "<li>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo ra một hàng trong bảng?",
+          "answers": [
+            "<th>",
+            "<tr>",
+            "<td>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo ra một ô dữ liệu trong bảng?",
+          "answers": [
+            "<tr>",
+            "<td>",
+            "<table>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "topicId": 2,
+          "question": "Thuộc tính nào của thẻ <input> dùng để tạo ra một ô nhập liệu mật khẩu?",
+          "answers": [
+            "type=\"text\"",
+            "type=\"password\"",
+            "type=\"hidden\""
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "topicId": 2,
+          "question": "Thuộc tính nào của thẻ <form> xác định phương thức gửi dữ liệu?",
+          "answers": [
+            "action",
+            "method",
+            "enctype"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 11,
+          "topicId": 2,
+          "question": "HTML5 có hỗ trợ phần tử nào để phát video?",
+          "answers": [
+            "<video>",
+            "<media>",
+            "<audio>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 12,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo ra một khung nội dung nhúng từ một trang web khác?",
+          "answers": [
+            "<iframe>",
+            "<frame>",
+            "<embed>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 13,
+          "topicId": 2,
+          "question": "Thẻ nào được sử dụng để tạo một đoạn văn bản trong HTML?",
+          "answers": [
+            "<br>",
+            "<p>",
+            "<span>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "topicId": 2,
+          "question": "Thẻ nào dùng để tạo một danh sách có thứ tự?",
+          "answers": [
+            "<ul>",
+            "<li>",
+            "<ol>"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 15,
+          "topicId": 2,
+          "question": "Thuộc tính nào dùng để liên kết một thẻ <label> với một thẻ <input>?",
+          "answers": [
+            "name",
+            "id",
+            "for"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 16,
+          "topicId": 2,
+          "question": "Thuộc tính 'alt' trong thẻ <img> có tác dụng gì?",
+          "answers": [
+            "Hiển thị văn bản thay thế khi hình ảnh không load được",
+            "Liên kết hình ảnh với một URL",
+            "Thay đổi kích thước hình ảnh"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 17,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo một liên kết email?",
+          "answers": [
+            "<a href=\"mailto:...\">",
+            "<email>",
+            "<mail>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "topicId": 2,
+          "question": "Thẻ nào được sử dụng để tạo ra một dòng ngang trong HTML?",
+          "answers": [
+            "<line>",
+            "<hr>",
+            "<br>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "topicId": 2,
+          "question": "Thẻ HTML nào được sử dụng để xác định một tiêu đề của trang web?",
+          "answers": [
+            "<header>",
+            "<title>",
+            "<head>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 20,
+          "topicId": 2,
+          "question": "Thẻ HTML nào dùng để tạo một khu vực có thể cuộn trong trang web?",
+          "answers": [
+            "<div>",
+            "<span>",
+            "<marquee>"
+          ],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "questionsCSS": [
+        {
+          "id": 1,
+          "topicId": 3,
+          "question": "CSS là viết tắt của gì?",
+          "answers": [
+            "Cascading Style Sheets",
+            "Colorful Style Sheets",
+            "Computer Style Sheets"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "topicId": 3,
+          "question": "Thuộc tính nào trong CSS dùng để thay đổi màu nền của một phần tử?",
+          "answers": [
+            "color",
+            "background-color",
+            "bgcolor"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "topicId": 3,
+          "question": "Thuộc tính CSS nào dùng để thay đổi kích thước chữ?",
+          "answers": [
+            "font-size",
+            "text-size",
+            "font-weight"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "topicId": 3,
+          "question": "Làm cách nào để làm cho một đoạn văn bản in đậm?",
+          "answers": [
+            "font-weight: bold;",
+            "text-decoration: bold;",
+            "font-style: bold;"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 5,
+          "topicId": 3,
+          "question": "CSS có thể được áp dụng vào HTML bằng cách nào?",
+          "answers": [
+            "Inline, Internal và External",
+            "Chỉ Internal",
+            "Chỉ External"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 6,
+          "topicId": 3,
+          "question": "Thuộc tính nào dùng để căn giữa một phần tử theo chiều ngang?",
+          "answers": [
+            "text-align: center;",
+            "margin: auto;",
+            "align-content: center;"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "topicId": 3,
+          "question": "Thuộc tính nào được sử dụng để thêm khoảng cách giữa các phần tử?",
+          "answers": [
+            "spacing",
+            "padding",
+            "margin"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "topicId": 3,
+          "question": "Thuộc tính nào dùng để thay đổi kiểu chữ của văn bản?",
+          "answers": [
+            "font-style",
+            "font-weight",
+            "font-family"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 9,
+          "topicId": 3,
+          "question": "Thuộc tính nào dùng để thay đổi màu của văn bản?",
+          "answers": [
+            "color",
+            "font-color",
+            "text-color"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 10,
+          "topicId": 3,
+          "question": "Để thay đổi độ mờ của một phần tử, ta sử dụng thuộc tính nào?",
+          "answers": [
+            "visibility",
+            "opacity",
+            "filter"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 11,
+          "topicId": 3,
+          "question": "Thuộc tính nào dùng để tạo bóng cho một phần tử?",
+          "answers": [
+            "box-shadow",
+            "shadow",
+            "border-shadow"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 12,
+          "topicId": 3,
+          "question": "Đơn vị nào được sử dụng để xác định kích thước tương đối dựa trên kích thước font của phần tử gốc?",
+          "answers": [
+            "px",
+            "em",
+            "rem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 13,
+          "topicId": 3,
+          "question": "Thuộc tính CSS nào dùng để tạo một đường viền xung quanh một phần tử?",
+          "answers": [
+            "border",
+            "outline",
+            "box"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 14,
+          "topicId": 3,
+          "question": "Cách nào để chỉ định một lớp CSS cho một phần tử HTML?",
+          "answers": [
+            "class=myClass",
+            "id=myClass",
+            "class='myClass'"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 15,
+          "topicId": 3,
+          "question": "Thuộc tính CSS nào dùng để điều chỉnh độ rộng của phần tử?",
+          "answers": [
+            "width",
+            "height",
+            "size"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 3,
+          "question": "Flexbox trong CSS là gì?",
+          "answers": [
+            "Một cách để điều chỉnh bố cục các phần tử theo chiều dọc",
+            "Một cách để tạo các phần tử linh hoạt và có thể co giãn",
+            "Một thuộc tính để thêm khoảng cách giữa các phần tử"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 17,
+          "topicId": 3,
+          "question": "Thuộc tính CSS nào dùng để thay đổi kiểu danh sách?",
+          "answers": [
+            "list-style-type",
+            "list-style",
+            "list-type"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "topicId": 3,
+          "question": "Thuộc tính nào dùng để ẩn một phần tử khỏi hiển thị nhưng vẫn chiếm không gian trong bố cục?",
+          "answers": [
+            "display: none;",
+            "visibility: hidden;",
+            "opacity: 0;"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "topicId": 3,
+          "question": "Thuộc tính CSS nào dùng để căn chỉnh các phần tử con của một phần tử theo chiều dọc?",
+          "answers": [
+            "vertical-align",
+            "align-items",
+            "text-align"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 20,
+          "topicId": 3,
+          "question": "Cú pháp đúng để comment trong CSS là gì?",
+          "answers": [
+            "// comment",
+            "<!-- comment -->",
+            "/* comment */"
+          ],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "questionsJavaScript": [
+        {
+          "id": 1,
+          "topicId": 4,
+          "question": "JavaScript là ngôn ngữ loại gì?",
+          "answers": [
+            "Lập trình server-side",
+            "Lập trình client-side",
+            "Cả hai"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để in dữ liệu ra console?",
+          "answers": [
+            "console.print()",
+            "console.log()",
+            "print()"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "topicId": 4,
+          "question": "Trong JavaScript, cách nào để khai báo một biến?",
+          "answers": [
+            "var, let, const",
+            "int, let, const",
+            "var, int, let"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "topicId": 4,
+          "question": "Phương thức nào được dùng để kết hợp hai mảng?",
+          "answers": [
+            "concat()",
+            "combine()",
+            "append()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 5,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để chuyển một chuỗi thành chữ in hoa?",
+          "answers": [
+            "toUpperCase()",
+            "toUpper()",
+            "changeCase()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 6,
+          "topicId": 4,
+          "question": "Cú pháp đúng để viết một vòng lặp for trong JavaScript là gì?",
+          "answers": [
+            "for (i = 0; i <= 5; i++)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 7,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để thêm một phần tử vào cuối mảng?",
+          "answers": [
+            "push()",
+            "pop()",
+            "add()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 8,
+          "topicId": 4,
+          "question": "Trong JavaScript, từ khóa nào được sử dụng để kiểm tra xem một điều kiện có đúng hay không?",
+          "answers": [
+            "if",
+            "for",
+            "while"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 9,
+          "topicId": 4,
+          "question": "JSON là gì?",
+          "answers": [
+            "Một cú pháp để lưu trữ và trao đổi dữ liệu",
+            "Một cú pháp để biên dịch mã JavaScript",
+            "Một loại biến trong JavaScript"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 10,
+          "topicId": 4,
+          "question": "Trong JavaScript, `===` có nghĩa là gì?",
+          "answers": [
+            "So sánh giá trị và kiểu dữ liệu",
+            "Chỉ so sánh giá trị",
+            "Chỉ so sánh kiểu dữ liệu"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 11,
+          "topicId": 4,
+          "question": "Làm thế nào để tạo một đối tượng trong JavaScript?",
+          "answers": [
+            "var obj = {};",
+            "var obj = ();",
+            "var obj = []; "
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 12,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để xóa phần tử cuối cùng của một mảng?",
+          "answers": [
+            "pop()",
+            "remove()",
+            "delete()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 13,
+          "topicId": 4,
+          "question": "Phương thức nào trả về số ký tự của một chuỗi?",
+          "answers": [
+            "length",
+            "size",
+            "count"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 14,
+          "topicId": 4,
+          "question": "Trong JavaScript, giá trị `NaN` đại diện cho điều gì?",
+          "answers": [
+            "Not a Number",
+            "Not a Null",
+            "Not a Name"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 15,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để chuyển đổi một chuỗi thành một số nguyên?",
+          "answers": [
+            "parseInt()",
+            "parseFloat()",
+            "Number()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 4,
+          "question": "Cú pháp đúng để viết một hàm trong JavaScript là gì?",
+          "answers": [
+            "function myFunction() {}",
+            "def myFunction() {}",
+            "func myFunction() {}"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 17,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để kiểm tra xem một mảng có chứa phần tử nhất định hay không?",
+          "answers": [
+            "includes()",
+            "contains()",
+            "has()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "topicId": 4,
+          "question": "JavaScript có hỗ trợ các lớp (classes) không?",
+          "answers": [
+            "Có, từ ECMAScript 6 trở đi",
+            "Không",
+            "Chỉ trong trình duyệt hiện đại"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 19,
+          "topicId": 4,
+          "question": "Phương thức nào dùng để chuyển đổi một đối tượng JavaScript thành một chuỗi JSON?",
+          "answers": [
+            "JSON.stringify()",
+            "JSON.parse()",
+            "Object.toString()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 20,
+          "topicId": 4,
+          "question": "JavaScript là ngôn ngữ kiểu gì?",
+          "answers": [
+            "Ngôn ngữ lập trình tĩnh",
+            "Ngôn ngữ lập trình động",
+            "Ngôn ngữ lập trình biên dịch"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "questionsReactJS": [
+        {
+          "id": 1,
+          "topicId": 5,
+          "question": "ReactJS là gì?",
+          "answers": [
+            "Thư viện JavaScript để xây dựng giao diện người dùng",
+            "Framework JavaScript toàn diện",
+            "Ngôn ngữ lập trình mới"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "topicId": 5,
+          "question": "Phần tử nào trong React dùng để bao bọc và trả về nhiều phần tử con?",
+          "answers": [
+            "Fragment",
+            "div",
+            "Container"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 3,
+          "topicId": 5,
+          "question": "Cách nào đúng để tạo một component trong React?",
+          "answers": [
+            "function MyComponent() {}",
+            "var MyComponent = new Component();",
+            "createComponent MyComponent() {}"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "topicId": 5,
+          "question": "Trong React, state là gì?",
+          "answers": [
+            "Một biến toàn cục",
+            "Một đối tượng để lưu trữ dữ liệu động của component",
+            "Một hàm để tính toán giá trị"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "topicId": 5,
+          "question": "Hàm nào dùng để tạo một state trong functional component?",
+          "answers": [
+            "useState",
+            "setState",
+            "createState"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 6,
+          "topicId": 5,
+          "question": "Props trong React là gì?",
+          "answers": [
+            "Dữ liệu được truyền từ component cha xuống component con",
+            "Dữ liệu cục bộ của component",
+            "Biến toàn cục"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 7,
+          "topicId": 5,
+          "question": "React component nào không lưu trữ state?",
+          "answers": [
+            "Functional component",
+            "Class component",
+            "Stateful component"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 8,
+          "topicId": 5,
+          "question": "React hook nào được sử dụng để thực hiện các side effects trong function component?",
+          "answers": [
+            "useEffect",
+            "useState",
+            "useReducer"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 9,
+          "topicId": 5,
+          "question": "Cách nào đúng để truyền props vào một component?",
+          "answers": [
+            "<MyComponent prop1='value' />",
+            "<MyComponent[prop1] = 'value' />",
+            "<MyComponent>prop1='value'</MyComponent>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 10,
+          "topicId": 5,
+          "question": "Phương thức nào dùng để cập nhật state trong class component?",
+          "answers": [
+            "setState()",
+            "updateState()",
+            "modifyState()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 11,
+          "topicId": 5,
+          "question": "JSX là gì?",
+          "answers": [
+            "Một cú pháp mở rộng cho JavaScript cho phép viết XML/HTML trong JavaScript",
+            "Một hàm JavaScript để chuyển đổi HTML thành JavaScript",
+            "Một kiểu dữ liệu mới trong React"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 12,
+          "topicId": 5,
+          "question": "React Router dùng để làm gì?",
+          "answers": [
+            "Quản lý điều hướng giữa các trang trong ứng dụng React",
+            "Kết nối React với server",
+            "Tạo các component mới trong React"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 13,
+          "topicId": 5,
+          "question": "Làm thế nào để thêm một sự kiện onClick vào một button trong React?",
+          "answers": [
+            "<button onClick={handleClick}>Click me</button>",
+            "<button click={handleClick}>Click me</button>",
+            "<button onClick='handleClick'>Click me</button>"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 14,
+          "topicId": 5,
+          "question": "React hook nào dùng để quản lý các giá trị phức tạp trong component?",
+          "answers": [
+            "useReducer",
+            "useState",
+            "useEffect"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 15,
+          "topicId": 5,
+          "question": "Câu lệnh nào được sử dụng để nhập React vào một file?",
+          "answers": [
+            "import React from 'react';",
+            "require('react');",
+            "include React"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 5,
+          "question": "Làm thế nào để render điều kiện trong JSX?",
+          "answers": [
+            "{condition ? <ComponentA /> : <ComponentB />}",
+            "{if (condition) { <ComponentA /> } else { <ComponentB /> }}",
+            "{condition && <ComponentA /> || <ComponentB />}"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 17,
+          "topicId": 5,
+          "question": "Phương thức lifecycle nào được gọi khi component đã được render xong?",
+          "answers": [
+            "componentDidMount",
+            "componentWillMount",
+            "componentDidUpdate"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "topicId": 5,
+          "question": "Context API trong React dùng để làm gì?",
+          "answers": [
+            "Truyền dữ liệu giữa các component mà không cần thông qua props",
+            "Quản lý state cục bộ trong component",
+            "Quản lý kết nối với API"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 19,
+          "topicId": 5,
+          "question": "React render UI ở chế độ nào?",
+          "answers": [
+            "Client-side",
+            "Server-side",
+            "Cả hai"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 20,
+          "topicId": 5,
+          "question": "Redux là gì trong React?",
+          "answers": [
+            "Một thư viện để quản lý state trong các ứng dụng React",
+            "Một thư viện để quản lý điều hướng trong React",
+            "Một công cụ để tối ưu hiệu suất trong React"
+          ],
+          "correctAnswer": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "questionsJava": [
+        {
+          "id": 1,
+          "topicId": 2,
+          "question": "Java là gì?",
+          "answers": [
+            "Một hệ điều hành",
+            "Một ngôn ngữ lập trình",
+            "Một trình duyệt web",
+            "Một loại cơ sở dữ liệu"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "topicId": 2,
+          "question": "Từ khoá nào dùng để khai báo một lớp trong Java?",
+          "answers": [
+            "function",
+            "def",
+            "class",
+            "new"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "topicId": 2,
+          "question": "Java có hỗ trợ đa kế thừa trực tiếp không?",
+          "answers": [
+            "Có",
+            "Không",
+            "Chỉ hỗ trợ trong một số trường hợp đặc biệt",
+            "Chỉ hỗ trợ thông qua interfaces"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 4,
+          "topicId": 2,
+          "question": "Từ khoá nào dùng để kế thừa một lớp trong Java?",
+          "answers": [
+            "inherits",
+            "extends",
+            "super",
+            "implements"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "topicId": 2,
+          "question": "Từ khoá nào dùng để khai báo một interface trong Java?",
+          "answers": [
+            "interface",
+            "implements",
+            "extends",
+            "new"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 6,
+          "topicId": 2,
+          "question": "Phương thức nào trong Java được gọi đầu tiên khi chạy một chương trình?",
+          "answers": [
+            "constructor",
+            "run()",
+            "start()",
+            "main()"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 7,
+          "topicId": 2,
+          "question": "Lớp cha của tất cả các lớp trong Java là gì?",
+          "answers": [
+            "Object",
+            "Class",
+            "Base",
+            "Super"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 8,
+          "topicId": 2,
+          "question": "Các phương thức trong interface mặc định là gì?",
+          "answers": [
+            "Public và abstract",
+            "Private và static",
+            "Protected và final",
+            "Public và static"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 9,
+          "topicId": 2,
+          "question": "Từ khoá nào dùng để tạo một đối tượng trong Java?",
+          "answers": [
+            "new",
+            "create",
+            "construct",
+            "instance"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 10,
+          "topicId": 2,
+          "question": "Kiểu dữ liệu nào không phải là kiểu nguyên thuỷ trong Java?",
+          "answers": [
+            "int",
+            "boolean",
+            "String",
+            "char"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 11,
+          "topicId": 2,
+          "question": "Phương thức nào dùng để so sánh hai chuỗi trong Java?",
+          "answers": [
+            "equals()",
+            "compare()",
+            "compareTo()",
+            "match()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 12,
+          "topicId": 2,
+          "question": "Java có phải là ngôn ngữ lập trình hướng đối tượng không?",
+          "answers": [
+            "Có",
+            "Không",
+            "Một phần",
+            "Chỉ đối tượng hoá trong runtime"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 13,
+          "topicId": 2,
+          "question": "Java sử dụng bộ thu gom rác (Garbage Collection) để làm gì?",
+          "answers": [
+            "Tối ưu hoá tốc độ chương trình",
+            "Thu gom các đối tượng không còn sử dụng",
+            "Quản lý luồng xử lý",
+            "Nâng cao bảo mật của ứng dụng"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "topicId": 2,
+          "question": "Từ khoá nào trong Java giúp ngăn cản kế thừa một lớp?",
+          "answers": [
+            "static",
+            "final",
+            "abstract",
+            "const"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 15,
+          "topicId": 2,
+          "question": "Phương thức nào trong lớp String dùng để lấy chiều dài của chuỗi?",
+          "answers": [
+            "length()",
+            "size()",
+            "getLength()",
+            "charAt()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 2,
+          "question": "Lệnh nào dùng để in ra màn hình trong Java?",
+          "answers": [
+            "System.out.println()",
+            "print()",
+            "write()",
+            "console.log()"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 17,
+          "topicId": 2,
+          "question": "Để tạo một lớp trừu tượng trong Java, bạn dùng từ khoá nào?",
+          "answers": [
+            "abstract",
+            "final",
+            "interface",
+            "virtual"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "topicId": 2,
+          "question": "Từ khoá nào dùng để xử lý ngoại lệ trong Java?",
+          "answers": [
+            "catch",
+            "throw",
+            "try-catch",
+            "final"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 19,
+          "topicId": 2,
+          "question": "Một vòng lặp for-each trong Java được sử dụng để làm gì?",
+          "answers": [
+            "Duyệt qua các phần tử trong một mảng hoặc tập hợp",
+            "Khởi tạo và điều khiển vòng lặp",
+            "So sánh các giá trị",
+            "Chỉ dùng cho các lớp kế thừa từ Iterator"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 20,
+          "topicId": 2,
+          "question": "Phương thức nào dùng để dừng một luồng (thread) trong Java?",
+          "answers": [
+            "pause()",
+            "terminate()",
+            "stop()",
+            "shutdown()"
+          ],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "questionsC": [
+        {
+          "id": 1,
+          "topicId": 3,
+          "question": "C++ là gì?",
+          "answers": [
+            "Một ngôn ngữ lập trình hướng đối tượng",
+            "Một hệ điều hành",
+            "Một trình duyệt web",
+            "Một loại cơ sở dữ liệu"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "topicId": 3,
+          "question": "Từ khoá nào dùng để khai báo một lớp trong C++?",
+          "answers": [
+            "def",
+            "class",
+            "new",
+            "function"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "topicId": 3,
+          "question": "C++ có hỗ trợ đa kế thừa không?",
+          "answers": [
+            "Có",
+            "Không",
+            "Chỉ qua interfaces",
+            "Chỉ hỗ trợ một phần"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 4,
+          "topicId": 3,
+          "question": "Phương thức nào được gọi khi một đối tượng C++ được tạo?",
+          "answers": [
+            "main()",
+            "run()",
+            "constructor",
+            "start()"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 5,
+          "topicId": 3,
+          "question": "Trong C++, toán tử nào được sử dụng để lấy địa chỉ của biến?",
+          "answers": [
+            "&",
+            "*",
+            "&&",
+            "^"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 6,
+          "topicId": 3,
+          "question": "Từ khoá nào được sử dụng để khai báo một hằng số trong C++?",
+          "answers": [
+            "constant",
+            "const",
+            "let",
+            "immutable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "topicId": 3,
+          "question": "Kiểu dữ liệu nào trong C++ không phải là kiểu nguyên thủy?",
+          "answers": [
+            "int",
+            "float",
+            "string",
+            "double"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "topicId": 3,
+          "question": "Từ khoá nào dùng để xử lý ngoại lệ trong C++?",
+          "answers": [
+            "throw",
+            "catch",
+            "try-catch",
+            "final"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 9,
+          "topicId": 3,
+          "question": "Con trỏ trong C++ là gì?",
+          "answers": [
+            "Một biến lưu trữ giá trị",
+            "Một biến lưu trữ địa chỉ bộ nhớ của biến khác",
+            "Một hàm để quản lý bộ nhớ",
+            "Một kiểu dữ liệu mới"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "topicId": 3,
+          "question": "Toán tử nào được sử dụng để truy cập thành phần của đối tượng thông qua con trỏ?",
+          "answers": [
+            ".",
+            "->",
+            "::",
+            "*"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 11,
+          "topicId": 3,
+          "question": "Phương thức nào được gọi khi một đối tượng C++ bị huỷ?",
+          "answers": [
+            "dealloc()",
+            "free()",
+            "destructor",
+            "destroy()"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 12,
+          "topicId": 3,
+          "question": "Lệnh nào dùng để in ra màn hình trong C++?",
+          "answers": [
+            "print()",
+            "System.out.println()",
+            "console.log()",
+            "std::cout"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 13,
+          "topicId": 3,
+          "question": "Phép toán nào trong C++ dùng để so sánh hai giá trị?",
+          "answers": [
+            "=",
+            "==",
+            "===",
+            "=>"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "topicId": 3,
+          "question": "Từ khoá nào được sử dụng để tạo đối tượng trong C++?",
+          "answers": [
+            "construct",
+            "new",
+            "create",
+            "build"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 15,
+          "topicId": 3,
+          "question": "Hàm nào được sử dụng để cấp phát bộ nhớ động trong C++?",
+          "answers": [
+            "new",
+            "malloc",
+            "allocate",
+            "init"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 16,
+          "topicId": 3,
+          "question": "Trong C++, từ khoá nào dùng để ngăn chặn việc kế thừa từ một lớp?",
+          "answers": [
+            "final",
+            "static",
+            "virtual",
+            "const"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 17,
+          "topicId": 3,
+          "question": "Phương thức nào trong C++ dùng để lấy chiều dài của một chuỗi?",
+          "answers": [
+            "size()",
+            "length()",
+            "getSize()",
+            "charAt()"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 18,
+          "topicId": 3,
+          "question": "Từ khoá nào dùng để khai báo một hàm ảo trong C++?",
+          "answers": [
+            "override",
+            "virtual",
+            "abstract",
+            "implements"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "topicId": 3,
+          "question": "Trong C++, hàm nào có thể gọi nhiều hơn một lần với các kiểu dữ liệu khác nhau?",
+          "answers": [
+            "Hàm trừu tượng",
+            "Hàm ảo",
+            "Hàm nạp chồng (overloading)",
+            "Hàm bạn (friend)"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 20,
+          "topicId": 3,
+          "question": "Từ khoá nào được dùng để khai báo một lớp kế thừa trong C++?",
+          "answers": [
+            "implements",
+            "inherits",
+            "extends",
+            "public"
+          ],
+          "correctAnswer": 3
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "question": 71,
+      "answer": 1
+    },
+    {
+      "question": 72,
+      "answer": 3
+    },
+    {
+      "question": 73,
+      "answer": 1
+    },
+    {
+      "question": 74,
+      "answer": 2
+    },
+    {
+      "question": 75,
+      "answer": 2
+    },
+    {
+      "question": 76,
+      "answer": 1
+    },
+    {
+      "question": 77,
+      "answer": 2
+    }
+  ]
+}

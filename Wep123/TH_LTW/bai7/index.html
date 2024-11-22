@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <section>
+        <div class="box" onclick="myFunction()">
+            <span>
+                Danh Sach Hang San Xuat CPU
+            </span>
+            <input type="text" id="ddlDanhsachhangsx" placeholder="Intel">
+        </div>
+
+        <div id="box1" >
+            <span id="hang1">Hang</span>
+            <input type="text" id="txtHang" placeholder="Mời bạn nhập tên hãng">
+            <button id="btnLuu" class="box3"   onclick="luu()">Luu</button>
+            <button id="btnHuy1"  class="huy1" onclick="huy1()">Huy</button>
+        </div>
+        <br>
+        <button id="btnHuy"  class="huy" onclick="huy()">Huy</button>
+        <button id="btnThem" class="them" onclick="them()">Them</button>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Thêm CSS để tùy chỉnh giao diện */
+        #cpuList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cpuItem {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        #addControls {
+            display: none;
+        }
+    </style>
+    <title>Danh sách hãng CPU</title>
+</head>
+<body>
+
+    <h2>Danh sách hãng CPU</h2>
+
+    //Danh sách sẽ được hiển thị tại đây 
+    <ul id="cpuList"></ul>
+
+    // Controls cho việc thêm mới 
+    <div id="addControls">
+        <input type="text" id="txtHang" placeholder="Nhập tên hãng...">
+        <button id="btnLuu" onclick="luuHang()">Lưu</button>
+        <button id="btnHuy" onclick="huyThem()">Hủy</button>
+    </div>
+    <button id="btnThem" onclick="hienThiThem()">Thêm</button>
+
+    <script src="index.js">
+       
+    </script>
+
+</body>
+</html> -->

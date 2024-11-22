@@ -1,0 +1,70 @@
+.question {
+    color: blue;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.dsquestion {
+    margin: 1%;
+}
+
+.box {
+    border-bottom: 1px solid gray;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.answer {
+    width: 100%;
+    margin-left: 3%;
+    color: rgb(0, 0, 0);
+}
+
+.answer-item {
+
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    font-weight: 450;
+}
+
+.answer_text {
+    color: rgb(0, 0, 0);
+    margin: 1%;
+}
+
+label {
+    margin: 1%;
+}
+
+.input_text {
+    font-size: 24px;
+    padding: 1%;
+
+    color: black;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+
+
+    /* Ẩn đi giao diện mặc định của radio */
+
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.input_text:checked {
+    background-color: #ff2c6f;
+    /* Màu của radio khi được chọn */
+    border-color: #ffe95e;
+}
+
+.input_text:hover {
+    box-shadow: 0 0 2px rgba(255, 243, 72, 0.5);
+    /* Hiệu ứng sáng khi hover */
+    background-color: rgba(255, 150, 52, 0.1);
+    /* Tăng độ sáng nhẹ */
+}

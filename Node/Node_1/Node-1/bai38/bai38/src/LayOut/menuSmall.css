@@ -1,0 +1,32 @@
+.home_menu li {
+    border: 1px solid red;
+    margin: 1%;
+    width: 5%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    color: white;
+    background: black;
+}
+
+ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Xóa gạch chân và thay đổi màu khi link bình thường */
+.custom-link {
+    text-decoration: none;
+    /* Xóa gạch chân */
+    color: rgb(255, 255, 255);
+    /* Đổi màu link */
+    font-weight: bold;
+    /* Tùy chỉnh thêm ví dụ như độ dày chữ */
+}
+
+/* Khi hover qua link */
+.custom-link:hover {
+    color: red;
+    /* Đổi màu khi hover */
+}

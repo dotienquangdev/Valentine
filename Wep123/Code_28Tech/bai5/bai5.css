@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: orange;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+}
+
+.menu.show {
+    display: block;
+
+}
+
+.menu ul {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.menu .inner-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.button {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}

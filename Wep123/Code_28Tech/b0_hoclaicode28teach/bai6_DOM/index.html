@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .red{
+            border: 1px solid red;
+        }
+        .greend{
+            border: 1px solid rgb(23, 255, 23);
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+        }
+        #close{
+            display: none;
+        }
+        #show{
+            display: block;
+        }
+        .menu{
+            display: none;
+        }
+    </style>
+    
+    <input id="inputName" style="width: 250px;" type="text" placeholder="Enter your first name and last name.">
+    <hr>
+
+    <button id="show">Menu</button>
+    <div id="menu" class="menu">
+        <ul>
+            <li>Muc 1</li>
+            <li>Muc 2</li>
+        </ul>
+    </div>
+    <button class="close">Close</button>
+    <hr>
+
+    <button id="button1">Button</button>
+    <br>
+    <hr>
+    <br>
+    <div class="parent">
+        <div class="child_1" id="child_1">
+            <div class="box">Box_1</div>
+            <div class="box">Box_2</div>
+            <div class="box">Box_3</div>
+        </div>
+        <div class="child_2">Child_2</div>
+        <div class="child_3">Child_3</div>
+    </div>
+
+    <script>
+        const childOne = document.querySelector(".child_1");
+        console.log(childOne)
+        console.log(childOne.parentNode);
+   
+   
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

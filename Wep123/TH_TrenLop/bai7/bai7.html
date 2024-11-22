@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai7.css">
+</head>
+<body>
+    
+    <!-- 
+        các hàm cơ bản trong DOM
+        1: removeChild(child): gỡ bỏ node child của một node
+            var list = document.getElementByid("myList");
+            list.removeChild(list.childNode[0]);
+        2: appendCild(child): thêm node child vào cuối danh sách
+        childNodes của 1 node
+        3: getAttribute(attributeName)
+            - Lấy giá trị của 1 thuộc tính
+        4: setAttribute(attributeName, value)
+            -Thiết lập giá trị của thuộc tính
+            document.getElementByTagName("INPUT")[0]
+        5: insertBefore(newNode,referenceNode)
+            -chèn newNode vào trước node refereceNode
+        6: replaceChild(newChild, oldChild)
+            -Thay thế node oldChild bởi newChild
+        7:Document.createTextNode(data)
+            -Tạo ra một node kiểu text với giá trị là data
+        8:Document.createElement(tagName)
+            -Tạo một node mới có kiểu là tagName
+        9:Document.querySelector(selectors)
+            -Trả về node đầu tiên thỏa mãn selectors (xâu ký tụ để lựa chọn)
+        10: Document.querySelectorAll(selectors)
+            -Lựa chọn các thành phần theo thuật toán DFS
+            - var matches = document.querySelectorAll("p")
+        - Làm việc với table
+            + các bước thực hiện
+                1: tham chiếu đến bảng var tbl = document.getElementByid("tblThongTin");
+                                        var row = tbl.insertRow(tbl.rows.length);
+                2: Thêm 1 dòng  
+                3: Thêm các ô           var cell1 = row.insertCell(0);
+                                        var cell2 = row.insertCell(1);
+                                        var cell3 = row.insertCell(2);
+                                        var cell4 = row.insertCell(3);
+                4: gán dữ liệu vào các ô tStt.value = parselnt(txtStt.value)+1;
+                                            cell2.innerHTML = document.gêtlementByid("txtHovaTen").value;
+                                            cell3.innerHTML = document.gêtlementByid("txtNgaySinh").value;
+                                            cell4.innerHTML = document.gêtlementByid("txtGoiTinh").value;
+        11: Hàm JSON.stringify()
+            chuyển đổi 1 đối tượng sang chuỗi JSON
+        Hàm JSON.parse()
+            -Chuyển đổi 1 chuỗi JSON sang đối tượng
+                myJSON = JSON.stringify(EmployeeFromLocal);
+                localStorege = JSON.parse(myJSON);
+     -->
+<style>
+</style>
+
+    <div class="box">
+        <form>
+            <fieldset>
+                <legend>He chao cau</legend>
+                <span >HovaTen</span>
+                <input id="hovaTen" type="text" >
+                <br>
+                <span >NgaySinh   </span>
+                <input id="ngaySinh" type="date">
+                <br>
+                <span >GioiTinh   </span>
+                <input class="gender" type="radio" name="gender" value="Nam">Nam
+                <input class="gender" type="radio" name="gender" value="Nữ">Nữ
+                <br>
+                <input type="button" class="them" value="Them" onclick="hi()">
+                <input type="reset" class="huy" value="Huy">
+            </fieldset>
+        </form>
+    </div>
+
+     <table id="table" border="1">
+        <tbody>
+            <tr>
+                <th>STT</th>
+                <th>Ho ten</th>
+                <th>Ngay Sinh</th>
+                <th>Gioi tinh</th>
+            </tr>
+        </tbody>
+        
+     </table>
+
+     <hr>
+     <!-- 
+        var user = new UserActivation();
+user.setInfo('admin', '@0123');
+if (user.checkLogin()) {
+    alter("Thanh cong");
+} else {
+    alter('That bai')
+}
+
+    var objectName = {};
+    Hoac
+    var objectName = new Object();
+
+    // Cach su dung
+    User.setInfo('admin')
+      -->
+    <script src="bai7.js"></script>
+</body>
+</html>

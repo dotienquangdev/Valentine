@@ -1,0 +1,569 @@
+@media screen and (max-width:1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .box-menu {
+        margin: auto;
+        width: 100%;
+        color: white;
+        height: 100px;
+        /* justify-content: space-between; */
+        background-color: blueviolet;
+        padding: 25px;
+        /* text-align: center; */
+    }
+
+    .box-title {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .box-menu-title-menu1 {
+        margin: 20px;
+        width: 200px;
+        /* padding: 20px; */
+
+    }
+
+    .box-title-menu {
+        /* margin: 20px; */
+        /* justify-content: center; */
+        width: 200px;
+        height: auto;
+        background-color: aquamarine;
+    }
+
+    .box-title-menu ul {
+        /* padding: 20px; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-title-menu ul li {
+        /* justify-content: center; */
+        /* text-align: center; */
+        padding: 10px;
+        /* padding: 10px; */
+        width: 200px;
+        height: 40px;
+        color: rgb(60, 81, 201);
+        /* margin-top: 10px; */
+        font-size: 20px;
+        background-color: bisque;
+        border: 1px solid red;
+    }
+
+    .box-title-menu ul li:hover {
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .box-title-text {
+        width: 900px;
+        padding: 20px;
+
+    }
+
+    .box-title-text h3 {
+        font-size: 30px;
+        padding: 20px 20px 20px 0px;
+    }
+
+    .box-title-text span {
+        font-weight: bold;
+        padding: 10px 10px 10px 0px;
+        font-size: 24px;
+    }
+
+    .box-title-text p {
+        /* padding: 10px; */
+        line-height: 1.5;
+        padding-top: 10px;
+    }
+
+    .box-title-text ul li {
+        padding-top: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bo {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    margin: auto;
+    padding: 20px;
+}
+
+.box-menu {
+    margin: auto;
+    width: 100%;
+    color: white;
+    height: 100px;
+    /* justify-content: space-between; */
+    background-color: blueviolet;
+    padding: 25px;
+    /* text-align: center; */
+}
+
+.box-title {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.box-menu-title-menu1 {
+    margin: 20px;
+    width: 200px;
+    /* padding: 20px; */
+
+}
+
+.box-title-menu {
+    /* margin: 20px; */
+    /* justify-content: center; */
+    width: 200px;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.box-title-menu ul {
+    /* padding: 20px; */
+    width: 100%;
+    height: 100%;
+}
+
+.box-title-menu ul li {
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding: 10px;
+    /* padding: 10px; */
+    width: 200px;
+    height: 40px;
+    color: rgb(60, 81, 201);
+    /* margin-top: 10px; */
+    font-size: 20px;
+    background-color: bisque;
+    border: 1px solid red;
+}
+
+.box-title-menu ul li:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.box-title-text {
+    width: 900px;
+    padding: 20px;
+
+}
+
+.box-title-text h3 {
+    font-size: 30px;
+    padding: 20px 20px 20px 0px;
+}
+
+.box-title-text span {
+    font-weight: bold;
+    padding: 10px 10px 10px 0px;
+    font-size: 24px;
+}
+
+.box-title-text p {
+    /* padding: 10px; */
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+.box-title-text ul li {
+    padding-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        margin: auto;
+        padding: 20px;
+        width: 760px;
+        /* text-align: center;
+        justify-content: center; */
+        /* background-color: chocolate; */
+    }
+
+    .box-menu {
+        border-radius: 10px;
+        /* margin: auto; */
+        width: 350px;
+        color: rgb(0, 0, 0);
+        height: 60px;
+        /* justify-content: space-between; */
+        background-color: rgb(220, 121, 224);
+        padding: 10px;
+        /* text-align: center; */
+        margin-left: auto;
+    }
+
+    .box-menu:hover {
+        color: white;
+    }
+
+    s .box-title {
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .box-menu-title-menu1 {
+        margin: 20px;
+        width: 100px;
+        /* padding: 20px; */
+
+    }
+
+    .box-title {
+        margin-top: 10px;
+        width: 650px;
+        border-radius: 10px;
+        background-color: rgb(202, 197, 117);
+        margin-left: 35px;
+    }
+
+    .box-title-menu1 {
+        width: 150px;
+    }
+
+    .box-title-menu {
+        margin: 10px 0px 0px 30px;
+        /* justify-content: center; */
+        width: 100px;
+        height: auto;
+        /* background-color: rgb(178, 231, 42); */
+    }
+
+    .box-title-menu ul {
+        /* padding: 20px; */
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-title-menu ul li {
+        /* justify-content: center; */
+        /* text-align: center; */
+        /* padding: 10px; */
+        /* padding: 10px; */
+        width: 150px;
+        height: 40px;
+        color: rgb(60, 81, 201);
+        font-size: 16px;
+        border: 1px solid red;
+    }
+
+    .box-title-menu ul li:hover {
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .box-title-text {
+        width: 400px;
+        margin: 0;
+
+    }
+
+    .box-title-text h3 {
+        font-size: 20px;
+        color: white;
+        /* padding: 10px 10px 10px 0px; */
+    }
+
+    .box-title-text span {
+        font-weight: bold;
+        padding: 5px 5px 5px 0px;
+        font-size: 18px;
+    }
+
+    .box-title-text p {
+        /* padding: 10px; */
+        line-height: 1.5;
+        padding-top: 5px;
+    }
+
+    .box-title-text ul li {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        width: 480px;
+
+    }
+
+    .box-menu {
+        border-radius: 10px;
+        width: 360px;
+        color: rgb(255, 255, 255);
+        height: 40px;
+        background-color: rgb(255, 74, 120);
+        margin-left: auto;
+        padding: 2px;
+        transition: 1s;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .box-menu h3 {
+        width: 100%;
+        color: blue;
+        margin-left: -10px;
+    }
+
+    .box-menu:hover {
+        color: rgb(95, 74, 232);
+    }
+
+    .box-title {
+        display: block;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .box-title {
+
+        margin: 0;
+        width: 480px;
+        border-radius: 10px;
+        /* background-color: rgb(255, 209, 241); */
+    }
+
+    .box-title-menu1 {
+        width: 300px;
+        /* margin: 20px; */
+    }
+
+    .box-title-menu {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        /* background-color: rgb(178, 231, 42); */
+    }
+
+    .box-title-menu ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-title-menu ul li {
+        width: 300px;
+        /* margin: 2px; */
+        left: 0;
+        height: 30px;
+        font-size: 14px;
+        background-color: rgb(146, 218, 237);
+
+    }
+
+    .box-title-menu ul li:hover {
+        background-color: rgb(244, 9, 63);
+        color: white;
+    }
+
+    .box-title-text {
+        /* margin-left: 60px; */
+        width: 400px;
+        /* padding: 20px; */
+
+    }
+
+    .box-title-text h3 {
+        font-size: 20px;
+
+    }
+
+    .box-title-text span {
+        font-weight: bold;
+        /* padding: 5px 5px 5px 0px; */
+        font-size: 14px;
+    }
+
+    .box-title-text p {
+        /* padding: 10px; */
+        line-height: 1.5;
+        /* padding-top: 5px; */
+    }
+
+    .box-title-text ul li {
+        font-size: 14px;
+        /* padding-top: 5px; */
+    }
+}
+
+@media screen and (max-width:320px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box {
+        width: 480px;
+
+    }
+
+    .box-menu {
+        border-radius: 10px;
+        width: 360px;
+        color: rgb(255, 255, 255);
+        height: 40px;
+        background-color: rgb(255, 74, 120);
+        margin-left: auto;
+        padding: 2px;
+        transition: 1s;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .box-menu h3 {
+        width: 100%;
+        color: blue;
+        margin-left: -10px;
+    }
+
+    .box-menu:hover {
+        color: rgb(95, 74, 232);
+    }
+
+    .box-title {
+        display: block;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .box-title {
+
+        margin: 0;
+        width: 480px;
+        border-radius: 10px;
+        /* background-color: rgb(255, 209, 241); */
+    }
+
+    .box-title-menu1 {
+        width: 300px;
+        /* margin: 20px; */
+    }
+
+    .box-title-menu {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        /* background-color: rgb(178, 231, 42); */
+    }
+
+    .box-title-menu ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box-title-menu ul li {
+        width: 300px;
+        /* margin: 2px; */
+        left: 0;
+        height: 30px;
+        font-size: 14px;
+        background-color: rgb(146, 218, 237);
+
+    }
+
+    .box-title-menu ul li:hover {
+        background-color: rgb(244, 9, 63);
+        color: white;
+    }
+
+    .box-title-text {
+        /* margin-left: 60px; */
+        width: 400px;
+        /* padding: 20px; */
+
+    }
+
+    .box-title-text h3 {
+        font-size: 20px;
+
+    }
+
+    .box-title-text span {
+        font-weight: bold;
+        /* padding: 5px 5px 5px 0px; */
+        font-size: 14px;
+    }
+
+    .box-title-text p {
+        /* padding: 10px; */
+        line-height: 1.5;
+        /* padding-top: 5px; */
+    }
+
+    .box-title-text ul li {
+        font-size: 14px;
+        /* padding-top: 5px; */
+    }
+}

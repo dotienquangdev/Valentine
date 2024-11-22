@@ -1,0 +1,99 @@
+.product_list {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_item {
+    width: 20%;
+    height: 250px;
+    border: 1px solid #b3b4b1;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h3 {
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+}
+
+.product_image {
+    width: 40%;
+    height: 40%;
+    flex-wrap: wrap;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(rgb(165, 255, 239));
+}
+
+.product_image:hover {
+    filter: brightness(120%);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* img {
+    object-fit: cover;
+
+} */
+
+.product_image-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    background-color: white;
+
+}
+
+.product_title {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+
+}
+
+.product_title_p {
+    flex-wrap: wrap;
+    width: 70%;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_title_img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.product_money {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.product_money_stock {
+    margin-left: 10px;
+    /* width: 100%; */
+}

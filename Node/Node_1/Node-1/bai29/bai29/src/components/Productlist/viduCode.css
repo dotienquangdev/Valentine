@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.code {
+    width: 100%;
+    /* background-color: aliceblue; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: auto;
+}
+
+ul li {
+    list-style-type: none;
+    list-style: none;
+}
+
+.code1 {
+    width: 33.333%;
+    height: 350px;
+    display: grid;
+    place-items: center;
+}
+
+.code1:hover {
+    border: 1px solid red;
+}
+
+.code_tt {
+    width: 33%;
+
+}

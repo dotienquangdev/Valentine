@@ -1,0 +1,10 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs_item {
+    padding: 10px;
+    cursor: pointer;
+}

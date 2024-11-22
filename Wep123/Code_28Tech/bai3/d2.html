@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #icon {left: 100px;
+      top:200px;
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<div id="icon"></div>
+
+<script>
+  const icon = document.getElementById('icon');
+  let isUp = true;
+
+  function jump() {
+    const currentTransform = window.getComputedStyle(icon).getPropertyValue('transform');
+    const translateY = isUp ? -140 : 0;
+    icon.style.transform = `translateY(${translateY}px)`;
+    isUp = !isUp;
+  }
+
+  // Set interval to make the icon jump periodically
+  setInterval(jump, 500);
+
+</script>
+</body>
+</html>

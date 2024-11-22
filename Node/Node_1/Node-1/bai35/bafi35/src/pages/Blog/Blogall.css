@@ -1,0 +1,20 @@
+.box {
+    border: 1px solid red;
+    margin: 1%;
+    padding: auto;
+    font-size: 20px;
+}
+
+.box_id {
+    color: red;
+
+}
+
+.box_title {
+    color: yellow;
+}
+
+.box_body {
+    color: blue;
+    margin: 10px;
+}

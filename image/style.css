@@ -1,0 +1,48 @@
+/* Hover Effects: Thêm hiệu ứng khi hover chuột lên hình ảnh. */
+img:hover {
+    filter: brightness(120%);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Object Fit: Đảm bảo hình ảnh vừa khít trong một khung chứa nhất định mà không bị méo. */
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    /* Các giá trị khác có thể dùng là contain, fill, none, scale-down, vv. */
+}
+
+
+/* Clip Path: Tạo các hình dạng cắt đặc biệt cho hình ảnh. */
+img {
+    clip-path: circle(50%);
+    /* Các giá trị khác có thể dùng là ellipse, polygon, inset, vv. */
+}
+
+
+/* Transform: Thay đổi kích thước, xoay, hoặc di chuyển hình ảnh. */
+img {
+    transform: rotate(20deg);
+    /* Các giá trị khác có thể dùng là scale, translate, skew, vv. */
+}
+
+
+
+/* Filter: Áp dụng các hiệu ứng hình ảnh như làm mờ, độ sáng, tương phản, vv. */
+img {
+    filter: grayscale(100%);
+    /* Các giá trị khác có thể dùng là blur, brightness, contrast, sepia, hue-rotate, vv. */
+}
+
+
+/* Opacity: Điều chỉnh độ trong suốt của hình ảnh. */
+img {
+    opacity: 0.8;
+}
+
+/* Box Shadow: Thêm bóng đổ cho hình ảnh. */
+img {
+    box-shadow: 10px 10px 5px #888888;
+}

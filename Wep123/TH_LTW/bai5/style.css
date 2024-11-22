@@ -1,0 +1,99 @@
+body {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form {
+    width: fit-content;
+    margin: auto auto;
+    margin-top: 10%;
+    /* transform: scale(1.5); */
+
+}
+
+#txtChuoi {
+    width: 165px;
+    border: 1px solid black;
+}
+
+fieldset {
+    width: 300px;
+    /* height: 100px; */
+    /* background-color: rgb(245, 228, 129); */
+    border: 1px solid rgb(255, 68, 68);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#list {
+    width: 168px;
+    border: 1ps solid red;
+}
+
+.ooo {
+    font-size: 10px;
+}
+
+.form-group label {
+    float: left;
+    width: 80px;
+    text-align: right;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.form-group button {
+    float: right;
+    padding: 7px;
+    margin: 0 5px;
+}
+
+input {
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    /* border: 1px solid #cccccc; */
+    /* font-size: 16px; */
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+}
+
+/*  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    line-height: 25px;
+}
+
+section {
+    width: 400px;
+    border-radius: 10px;
+    margin: 150px auto;
+    padding: 30px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+span {
+    width: 150px;
+    padding: 5px;
+    height: auto;
+    /* background-color: aqua; */

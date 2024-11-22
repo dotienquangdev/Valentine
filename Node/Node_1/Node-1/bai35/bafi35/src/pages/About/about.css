@@ -1,0 +1,41 @@
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.box-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_item {
+    width: 20%;
+    height: 120px;
+    margin: 1%;
+    /* padding: 1%; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+
+ul li {
+    list-style: none;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: blue;
+}

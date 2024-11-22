@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    line-height: 25px;
+}
+
+section {
+    width: 600px;
+    margin: 100px auto;
+    padding: 50px;
+    border: 1px solid black;
+}
+
+span {
+    padding: 10px;
+}
+
+select {
+    width: 280px;
+    height: 25px;
+    float: right;
+    border: 1px solid black;
+}
+
+input {
+    width: 278px;
+    height: 25px;
+    float: right;
+    border: 1px solid black;
+}
+
+#btnLuu {
+    margin-top: 45px;
+}
+
+#ddlDanhsachhangsx {
+    position: absolute;
+}
+
+#btnThem {
+    margin-left: 250px;
+    width: 50px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#txtHang {
+    position: absolute;
+    width: 278px;
+    margin-top: 20px;
+    margin-left: 226px;
+}
+
+#box1 span {
+    position: absolute;
+    margin-left: 2px;
+}
+
+.huy {
+    margin-top: 20px;
+}
+
+.box3 {
+    margin-top: 75px;
+}
+
+#btnLuu {
+    margin-left: 250px;
+    margin-top: 50px;
+    width: 50px;
+}
+
+#btnHuy {
+    position: absolute;
+    width: 50px;
+    margin-left: 390px;
+    margin-top: 10px;
+}
+
+#danhsachbutton {
+    width: 100%;
+}
+
+#box1 {
+    display: none;
+}
+
+#btnHuy1 {
+    margin-left: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.box2 {
+    display: block;
+}

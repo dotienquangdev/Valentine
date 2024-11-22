@@ -1,0 +1,20 @@
+.countruy {
+    background-color: rgb(160, 160, 160);
+    border: 1px solid yellow;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.countruy_item {
+    border-bottom: 1px solid orange;
+    width: 100%;
+    height: auto;
+}
+
+.countruy_text {
+    background-color: orange;
+    height: auto;
+    width: 300px;
+}

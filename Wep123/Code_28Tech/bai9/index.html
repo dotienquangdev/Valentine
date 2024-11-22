@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="lisUser" id="lisUser"></div>
+    
+
+    <!-- <script src="index1.js">
+    
+    </script> -->
+    <script>
+        // let infoUser = {
+//     fullName: "Do Tien Quang",
+//     email: "doquang@",
+//     age: 20,
+// };
+
+// let infoUserJSON = `{
+//     "fullName": "Do Tien Quang",
+//     "email": "doquang@",
+//     " age": 20,
+// }`;
+// console.log(infoUserJSON);
+// let infoJSONto = JSON.parse(infoUserJSON);
+// console.log(infoJSONto.fullName);
+
+let jsonString = "Hello body";
+console.log(jsonString);
+
+
+let jsonArray = `
+    [
+        {
+            "id":1,
+            "name":"Do Tien Quang",
+            "email":"doquang@gmail.com",
+        },
+        {
+            "id":2,
+            "name":"Do Tien Quang222",
+            "email":"doquang2@gmail.com",
+        },
+        {
+            "id":3,
+            "name":"3Do Tien Quang",
+            "email":"3doquang@gmail.com",
+        }
+    ]
+`;
+
+// console.log(jsonArray);
+let lisuser = JSON.parse(jsonArray);
+
+let htmls = "";
+
+lisuser.forEach(item => {
+    console.log(item);
+    htmls += `
+    <div class="user_item">
+        <div class="inneName">${item.name}</div>
+        <div class="inneEmail">${item.email}</div>
+    </div>
+    `;
+});
+const divUser = document.querySelector("#lisUser");
+// console.log(JSON.parse(jsonArray));
+
+
+let jsonArray1 = `
+        {
+            "id":1,
+            "name":"Do Tien Quang",
+            "email":"doquang@gmail.com",
+        },
+`;
+console.log(jsonArray1);
+
+let inforArr = JSON.parse(jsonArray1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

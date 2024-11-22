@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-in {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 234, 234);
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.box-in-h3 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.box-in-tk {
+    width: 100%;
+    padding: 15px;
+}
+
+.box-in-tk label p {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.box-in-tk input {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+.box-in-mk {
+    width: 100%;
+    padding: 15px;
+    margin-top: -50px;
+}
+
+.box-in-mk label p {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.box-in-mk input {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.box-in-dn {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-in-dn button {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.box-in-dn .button1 {
+    margin-left: 20px;
+}
+
+.red {
+    color: red;
+}

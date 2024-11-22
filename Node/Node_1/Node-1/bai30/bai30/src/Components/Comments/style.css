@@ -1,0 +1,46 @@
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comments_item {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid red;
+    width: 20%;
+
+}
+
+.s {
+    border: 1px solid violet;
+    width: 100%;
+    padding: 2px;
+}
+
+.a {
+    margin-left: 10px;
+    border: 1px solid rgb(255, 255, 0);
+    background-color: rgb(255, 239, 219);
+    /* padding: 1%; */
+}
+
+.comments_id {
+    color: rgb(201, 0, 201);
+
+}
+
+.comments_body {
+    color: rgb(255, 0, 43);
+    font-size: 12px;
+}
+
+.comments_postId {
+    color: blue;
+}
+
+.comments_likes {
+    color: orange;
+}
+
+.comments_user {}

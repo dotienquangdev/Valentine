@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tao form de nhap
+    chieu cao can nang vao cac textBox. (document.getElementByID)
+    tinh BMI va thong bao trang thai dua theo gia trij cua BMI
+    -->
+
+    
+    <table id="nhapcc1">
+        <span>Nhap chieu cao</span>
+        <!-- <form type="number" action="" id="nhapcc" placeholder="Nhap chieu cao">Hi</form> -->
+        <input type="number" id="nhapcc" name="nhapSo" placeholder="Nhap chieu cao">
+    </table>
+    <table id="nhapcn1">
+        <span>Nhap can nang</span>
+        <input type="number" id="nhapcn" name="nhapSo" placeholder="Nhap can nang">
+    </table>
+    <button id="bmi">BMT</button>
+
+
+
+
+
+
+<hr>
+<br>
+<form action="">
+
+</form>
+
+
+
+
+
+    <script>
+    var cc = prompt("Nhap chieu cao");
+    var songuyen =parseInt(cc);
+    var cn = prompt("Nhap can nang");
+    var songuyen =parseInt(cn);
+    var bmI = cn/cc;
+    if(bmI < 25 && bmI >0){
+        alert("Gay");
+    } else if(bmI >25 && bmI < 30){
+        alert("Oke");
+    } else if(bmI >= 30){
+        alert("beo");
+    }
+    console.log(bmI);
+    // alert(so);
+        let nhapcc = document.querySelector("#nhapcc");
+        let nhapcn = document.querySelector("#nhapcn");
+        let bmi = document.querySelector("#bmi");
+        bmi.onclick = function(){
+            // console.log(Nhapcc);
+            alert("So nhap la"+nhapcc);
+        }
+
+
+
+    
+        var inputString = prompt("Nhập các phần tử của mảng, cách nhau bằng dấu phẩy:");
+        var mang = inputString.split(",");
+        for(var i=0;mang.length;i++){
+            if(mang[i]< mang[0]){
+                console.log(mang[i]);
+            }
+        }
+        console.log("Mảng bạn vừa nhập là:", mang);
+    </script>
+</body>
+</html>
